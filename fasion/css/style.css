@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/ghost.jpg");
+    background-position: center
+    background-size: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.dropdown-menu{
+    background: rgb(255, 209, 3);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+
+.dropdown-menu a i{
+    color: white;
+    margin: 4px;
+}

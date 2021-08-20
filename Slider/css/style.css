@@ -14,9 +14,10 @@ body{
 .owl-carousel{
     display: flex;
     margin-top: 20%;
+    position: relative;
 }
 .items{
-    background: rgb(255, 217, 0);
+    background: yellowgreen;
     margin: 10px;
     padding: 50px 20px;
     text-align: center;
@@ -33,4 +34,44 @@ h4{
     font-weight: bolder;
     font-size: 15px;
     color: white;
+}
+.owl-carousel .owl-nav{
+    font-size: 30px;
+    color: white;
+}
+.owl-carousel .owl-nav .owl-prev{
+    top: 40%;
+    left: -5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    background: yellowgreen !important;
+    position: absolute;
+}
+.owl-carousel .owl-nav .owl-next{
+    top: 40%;
+    right: -5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    background: yellowgreen !important;
+    position: absolute;
+}
+.owl-carousel .owl-dots{
+    text-align: center;
+
+}
+.owl-carousel .owl-dots .owl-dot{
+    margin: 5px;
+    height: 3px;
+    width: 10px;
+    background: yellowgreen;
+}
+.owl-carousel .owl-dots .active{
+    margin: 5px;
+    height: 3px;
+    width: 15px;
+    background: rgb(238, 255, 0);
 }
