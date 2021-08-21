@@ -6,6 +6,10 @@
     text-decoration: none;
     list-style: none;
 }
+:root{
+    --primary : rgb(255, 209, 3);
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -19,23 +23,56 @@ header{
     margin: 0 auto;
 }
 .logo{
-    box-shadow: 0 0 5px black;
     cursor: pointer;
+    margin-top: 10px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .dropdown-menu{
-    background: rgb(255, 209, 3);
+    background: var(--primary);
     padding: 5px 10px;
     border-radius: 50px;
+    position: relative;
+}
+button{
+    border: transparent;
+    background: none;
+    color: white;
 }
 
-
-.dropdown-menu a i{
+.dropdown-menu i{
     color: white;
     margin: 4px;
+    cursor: pointer;
+}
+.dropdown-menu .menu{
+    background: var(--primary);
+    top: 40px;
+    left: -20px; 
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.dropdown-menu .menu ul li{
+    padding: 10px 15px;
+}
+.dropdown-menu .menu ul li a{
+    color: white;
+    font-size: 15px;
+}
+.dropdown-menu .menu ul li:hover{
+    background: white;
+}
+.dropdown-menu .menu ul li:hover a{
+    color: var(--primary);
+}
+.toggle-menu{
+    display: block !important;
+    opacity: 1 !important;
 }
