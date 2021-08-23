@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
 }
@@ -142,9 +144,9 @@ button{
 .btn-primary{
     color: white;
     background: var(--primary);
-    padding: 20px 40px;
+    padding: 10px 50px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .news{
     margin-top: 130px;
@@ -194,5 +196,46 @@ button{
     color: var(--primary);
 }
 .icons .row .col-3{
-    margin: 0 10px;
+    margin: 0 15px;
+}
+.blogs{
+    margin-top: 160px;
+    display: flex;
+    width: 100%;
+
+}
+.blogs .left{
+    width: 30%;
+    padding: 0 15px;
+}
+.blogs .left h2{
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+.blogs .left p{
+    padding-bottom: 50px;
+    color: rgba(0, 0, 0, 0.411);
+}
+.blogs .right{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    width: 70%;
+
+}
+.blogs .right .content{
+    margin: 0 20px;
+}
+.blogs .right .content h4{
+    margin-top: 10px;
+}
+.blogs .right .content p{
+    font-size: 10px;
+    margin: 5px 0;
+    
+    color: rgba(0, 0, 0, 0.411);
+}
+.blogs .right .content .links a{
+    color: var(--primary);
+    
 }
