@@ -9,7 +9,7 @@
     list-style: none;
 }
 :root{
-    --primary : rgb(255, 217, 3);
+    --primary : rgb(255, 175, 3);
 }
 .row{
     display: grid;
