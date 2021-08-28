@@ -8,9 +8,11 @@
 }
 /* For Color Var */
 :root{
-    --primary : rgb(255, 217, 0);
-    --secondary : rgb(73, 69, 69);
-    --pure : rgb(252, 252, 252);
+    --primary : rgb(0, 255, 128);
+    --secondary : rgb(0, 0, 0);
+    --pure : rgb(255, 255, 255);
+    --danger : rgb(255, 0, 0);
+    --heaven : rgb(238, 227, 227);
 }
 /* For Grid */
 .row{
@@ -55,6 +57,10 @@
       grid-column: span 12;
 }
 /* For Grid Finish */
+/* for all icon */
+i{
+    color:var(--pure);
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -68,7 +74,7 @@ body{
     width: 20%;
     height: 100vh;
     overflow: auto;
-    background: var(--secondary);
+    background: var(--pure);
     margin-left: 0%;
     transition: all 0.3s ease-in-out;
 
@@ -92,4 +98,155 @@ body{
 .hide-sidebar .left-sidebar{
     margin-left: -20%;
     transition: all 0.3s ease-in-out;
+}
+.full-section{
+    background-color: var(--heaven);
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+/* top-menu css */
+
+.top-menu ul{
+    display: flex;
+    align-items: center;
+}
+.top-menu ul li{
+    padding: 10px;
+}
+.top-menu ul li img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 25px;
+    position: relative;
+}
+.top-menu ul li .active-badge{
+    height: 10px;
+    width: 10px;
+    background: green;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--pure);
+    right: 33px;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    width: 300px;
+    top: 60px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: var(--pure);
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+.dropdown .dropdown-menu.dropdown-show{
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0 5px var(--secondary);
+}
+.dropdown-menu .card{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-menu .card button{
+    padding: 5px 10px;
+    background: var(--danger);
+}
+.profile-info .my-img img{
+    width: 80px;
+    border-radius: 3px;
+    padding-top: 5px;
+    position: relative;
+}
+.profile-info .my-img .active-badge{
+
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--pure);
+    right: 195px;
+}
+
+
+
+.profile-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+.profile-info .info p,.profile-info .info i{
+    font-size: 10px;
+    color: var(--secondary);
+    margin: 2px;
+}
+
+.profile-info .info .btn{
+    background-color: var(--primary);
+    padding: 3px 5px;
+    color: var(--pure);
+    border-radius: 3px;
+    font-size: 13px;
+}
+.space{
+    margin-top: 15px;
+    opacity: 30%;
+}
+.other-profile{
+    margin-top: 10px;
+}
+
+.other-profile .first{
+    display: flex;
+    align-items: center;
+}
+.other-profile .first i{
+    font-size: 40px;
+    margin-right: 15px;
+    color: var(--heaven);
+}
+.other-profile .first .first-min h5{
+    margin-bottom: -5px;
+}
+
+
+
+.notification{
+    width: 300px;
+    background-color: var(--pure);
+    right: -20px;
+    top: 40px;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.notification.dropdown-show{
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0 5px var(--secondary);
+}
+.notification h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+.notification .fisrt-noti .icon{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.notification .fisrt-noti .icon i{
+    color: var(--heaven);
+    font-size: 40px;
+    margin-right: 30px;
+}
+.notification .fisrt-noti .icon h5{
+    opacity: 50%;
+    font-weight: 300;
 }
