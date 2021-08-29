@@ -28,8 +28,3 @@ function dropdown(){
 }
 
 
-// function dropdown(){
-//     $(".dropdown-trigger").on('click',function(){
-//         $(".notification").toggleClass("dropdown-show")
-//     })
-// }
