@@ -9,7 +9,7 @@
 /* For Color Var */
 :root{
     --primary : #1BC5BD;
-    --semi-primary : #5efff783;
+    --semi-primary : #45f3ea96;
     --secondary : #272822;
     --lite : #8C8FA4;
     --pure : #FFFFFF;
@@ -302,6 +302,11 @@ body{
     color: #6993FF;
 }
 
+.top-section .top-menu .profile-section .notifications .notifications-group:hover h5{
+    color: var(--primary);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
 
 
 /* Top menu finish */
