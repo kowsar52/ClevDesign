@@ -105,7 +105,7 @@ body{
 
 /* Top menu start  */
 .full-section .top-section{
-    height: 35px;
+    height: 50px;
     background: var(--primary);
 }
 
@@ -118,17 +118,17 @@ body{
     position: relative;
 }
 
-.top-section .top-menu .profile-section{
+.top-section .top-menu .profile-section .inner-section{
     background-color: var(--pure);
     width: 380px;
     height: 100vh;
     top: 0px;
-    margin-left: 100px;
-    border-radius: 5px;
     overflow: auto;
-    position: absolute;
+    position: fixed;
     box-shadow: 0 0 3px var(--lite);
-    transition: margin-left .3s ease-in-out;
+    right: -380px;
+    padding: 25px;
+    transition: right .3s ease-in-out;
 }
 .profile-section .head button i{
     margin-left: 100px;
@@ -148,14 +148,19 @@ body{
 }
 
 .dropdown .dropdown-menu.dropdown-show{
-    margin-left: -350px;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    background: #0000007a;
+    height: 100vh;
+    top: 0;
+    transition: all .3s ease-in-out;
+}
+.top-section .top-menu .dropdown-menu.dropdown-show .inner-section{
+    right: 0;
     transition: all .3s ease-in-out;
 }
 
-
-.top-section .top-menu .profile-section{
-    padding: 25px;
-}
 .top-section .top-menu .profile-section .head h2{
     font-weight: 500;
     font-size: 20px;

@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    trigger();
+    triggerButton();
     dropdown();
 })
 
 
-function trigger(){
-    $(".trigger").on('click',function(){
+function triggerButton(){
+    $(".triggerButton").on('click',function(){
         $("body").toggleClass("hide-sidebar")
     })
 }
@@ -14,17 +14,20 @@ function trigger(){
 function dropdown(){
     $(".dropdown-trigger").on('click',function(){
 
-        if( $(".dropdown-trigger").next().hasClass('dropdown-show')){
+        
+        if( $(this).next().hasClass('dropdown-show')){
             $(document).find('.dropdown-menu.dropdown-show').removeClass('dropdown-show')
+        }else{
+
+            if( $(".dropdown-trigger").next().hasClass('dropdown-show')){
+                $(document).find('.dropdown-menu.dropdown-show').removeClass('dropdown-show')
+            }
+    
+             $(this).next('.dropdown-menu').toggleClass('dropdown-show')
+                
         }
-
-            $(this).next('.dropdown-menu').toggleClass('dropdown-show')
-            
-        
-
-
-        
+    
     })
-}
 
+}
 
