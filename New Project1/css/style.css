@@ -105,13 +105,12 @@ body{
 
 /* Top menu start  */
 .full-section .top-section{
-    height: 45px;
     height: 50px;
     background: var(--primary);
 }
 
 .top-section .top-menu li{
-    margin: 10px 15px;
+    margin: 13px;
 }
 .top-section .top-menu li i{
     color: var(--pure);
@@ -125,12 +124,10 @@ body{
     height: 100vh;
     top: 0px;
     padding: 25px;
-    margin-left: 100px;
     overflow: auto;
     position: fixed;
     box-shadow: 0 0 3px var(--lite);
     right: -380px;
-    padding: 25px;
     transition: right .3s ease-in-out;
 }
 .profile-section .head button i{
@@ -474,6 +471,82 @@ body{
     cursor: pointer;
 }
 
+/* action section start  */
+.top-section .top-menu .action-section .inner-section{
+    background-color: var(--pure);
+    width: 380px;
+    height: 100vh;
+    top: 0px;
+    padding: 25px;
+    overflow: auto;
+    position: fixed;
+    box-shadow: 0 0 3px var(--lite);
+    right: -380px;
+    transition: right .3s ease-in-out;
+    z-index: 1;
+}
+.top-section .top-menu .action-section .head button i{
+    margin-left: 50px;
+    color: var(--lite);
+    background-color: rgb(223, 215, 215);
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.top-section .top-menu .action-section button i:hover{
+    color: var(--pure);
+    background-color: var(--primary);
+    transition: all .3s ease-in-out;
+}
+
+
+.top-section .top-menu .dropdown-menu.dropdown-show .inner-section{
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+.top-section .top-menu .action-section .head h2{
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.top-section .top-menu .action-section .head small{
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--lite);
+}
+.action-section .boxs{
+    margin-top: 15px;
+}
+.action-section .boxs .row .col-6{
+    background: var(--heaven);
+    padding: 35px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.action-section .boxs .row .col-6 i{
+    font-size: 35px;
+    background: var(--heaven);
+    color: var(--primary) ; 
+    transition: all .3s ease-in-out;
+}
+
+.action-section .boxs .row .col-6 h4{
+    background: var(--heaven);
+    color: var(--lite) ; 
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+.action-section .boxs .row .col-6:hover,
+.action-section .boxs .row .col-6:hover i,
+.action-section .boxs .row .col-6:hover h4{
+    background: var(--primary);
+    color: var(--pure);
+}
+
 /* Top menu finish */
 
 
@@ -498,7 +571,7 @@ body{
 }
 .menu-icon button i{
     font-size: 20px;
-    margin: 12px;
+    margin: 15px;
     color: var(--pure);
     cursor: pointer;
 }
@@ -560,6 +633,9 @@ body{
     float: right;
     font-size: 14px;
     color: var(--lite);
+}
+.rotate_90_deg{
+    transform: rotate(90deg) !important;
 }
 .menu-group .dropdown .dropdown-menu{
     margin-left: 20px;
