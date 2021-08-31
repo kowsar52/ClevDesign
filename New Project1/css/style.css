@@ -150,15 +150,7 @@ body{
     transition: all .3s ease-in-out;
 }
 
-.dropdown .dropdown-menu.dropdown-show{
-    width: 100%;
-    position: fixed;
-    right: 0px;
-    background: #0000007a;
-    height: 100vh;
-    top: 0;
-    transition: all .3s ease-in-out;
-}
+
 .top-section .top-menu .dropdown-menu.dropdown-show .inner-section{
     right: 0;
     transition: all .3s ease-in-out;
