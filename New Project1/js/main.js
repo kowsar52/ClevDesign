@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    triggerButton();
+    trigger();
     dropdown();
 
 })
 
 
-function triggerButton(){
-    $(".triggerButton").on('click',function(){
+function trigger(){
+    $(".trigger").on('click',function(){
         $("body").toggleClass("hide-sidebar")
     })
 }

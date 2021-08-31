@@ -524,7 +524,7 @@ body{
     color: var(--lite);
     transition: all .3s ease-in-out;
 }
-.left-menu .menu-group .menu-item .fa-th-large{
+.left-menu .menu-group .menu-item .icon{
     color: var(--lite);
     margin-right: 10px;
     transition: all .3s ease-in-out;
@@ -573,15 +573,12 @@ body{
 
 
 .menu-group .dropdown .dropdown-menu{
-    display: none;
-    opacity: 0;
+    max-height: 0;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
 }
 .menu-group .dropdown .dropdown-menu.dropdown-show{
-    display: block;
-    opacity: 1;
     max-height: 400px;
-    transition: margin-top .3s ease-in-out;
-
 }
 
 
