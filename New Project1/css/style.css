@@ -105,11 +105,8 @@ body{
 
 /* Top menu start  */
 .full-section .top-section{
-<<<<<<< HEAD
     height: 45px;
-=======
     height: 50px;
->>>>>>> de1949cb02727b13c5125045d90eb4080591fb64
     background: var(--primary);
 }
 
@@ -127,11 +124,8 @@ body{
     width: 380px;
     height: 100vh;
     top: 0px;
-<<<<<<< HEAD
     padding: 25px;
     margin-left: 100px;
-=======
->>>>>>> de1949cb02727b13c5125045d90eb4080591fb64
     overflow: auto;
     position: fixed;
     box-shadow: 0 0 3px var(--lite);
@@ -165,14 +159,10 @@ body{
     top: 0;
     transition: all .3s ease-in-out;
 }
-<<<<<<< HEAD
-=======
 .top-section .top-menu .dropdown-menu.dropdown-show .inner-section{
     right: 0;
     transition: all .3s ease-in-out;
 }
-
->>>>>>> de1949cb02727b13c5125045d90eb4080591fb64
 .top-section .top-menu .profile-section .head h2{
     font-weight: 500;
     font-size: 20px;
