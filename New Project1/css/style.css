@@ -83,8 +83,20 @@ button{
       grid-column: span 12;
 }
 /* For Grid Finish */
+
+
+p,a{
+    color: var(--lite);
+    font-size: 14px;
+}
+small{
+    color: var(--lite);
+    font-size: 12px;
+}
+
 h1,h2,h3,h4,h5,h6{
-    color: rgba(56, 53, 53, 0.842);
+    color: var(--secondary);
+    font-weight: 500;
 }
 
 body{
@@ -95,7 +107,7 @@ body{
 
 .full-section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: var(--heaven);
 }
 
@@ -115,7 +127,7 @@ body{
 .top-section .top-menu li i{
     color: var(--pure);
     font-size: 20px;
-    position: relative;
+    
 }
 
 .top-section .top-menu .profile-section .inner-section{
@@ -126,6 +138,7 @@ body{
     padding: 25px;
     overflow: auto;
     position: fixed;
+    z-index: 3;
     box-shadow: 0 0 3px var(--lite);
     right: -380px;
     transition: right .3s ease-in-out;
@@ -325,6 +338,7 @@ body{
     height: 100vh;
     top: 0px;
     margin-left: 100px;
+    z-index: 3;
     overflow: auto;
     position: fixed;
     box-shadow: 0 0 3px var(--lite);
@@ -633,6 +647,7 @@ body{
     float: right;
     font-size: 14px;
     color: var(--lite);
+    transition: transform .5s ease-in-out;
 }
 .rotate_90_deg{
     transform: rotate(90deg) !important;
@@ -642,8 +657,10 @@ body{
 
 }
 .menu-group .dropdown .dropdown-menu li:hover a,
-.menu-group .dropdown .dropdown-menu li:hover i{
-    color: var(--primary);
+.menu-group .dropdown .dropdown-menu li:hover i,
+.dropdown-trigger.active a,
+.dropdown-trigger.active i{
+    color: var(--primary) !important;
 }
 
 
@@ -654,7 +671,7 @@ body{
     overflow: hidden;
 }
 .menu-group .dropdown .dropdown-menu.dropdown-show{
-    max-height: 400px;
+    max-height: 450px;
 }
 
 
@@ -662,4 +679,284 @@ body{
 
 
 /* Slide Left finish  */
+
+
+
+/* main section start  */
+.main-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-section .broadcrumb{
+    margin-top: 25px;
+}
+.main-section .broadcrumb nav .left-nav h2{
+    margin-right: 10px;
+}
+.main-section .broadcrumb nav .left-nav a{
+    font-size: 13px;
+}
+.main-section .broadcrumb nav .left-nav i{
+    margin: 0 10px;
+    font-size: 3px;
+    color: var(--lite);
+}
+
+
+.main-section .broadcrumb nav .right-nav i{
+    margin-right: 5px;
+}
+
+.main-section .broadcrumb nav .right-nav .right-menu{
+    background-color: var(--primary);
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.main-section .broadcrumb nav .right-nav .right-menu i,
+.main-section .broadcrumb nav .right-nav .right-menu h5{
+    color: var(--pure);
+    
+}
+.main-section .broadcrumb nav .right-nav .right-menu:hover,
+.main-section .broadcrumb nav .right-nav .fa-envelope-open-text:hover{
+    background-color: rgb(11, 133, 133);
+}
+
+.main-section .broadcrumb nav .right-nav .fa-envelope-open-text{
+    background-color: var(--primary);
+    color: var(--pure);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.broadcrumb nav .right-nav .right-menu i,
+.broadcrumb nav .right-nav .right-menu h5{
+    color: var(--pure) !important;
+}
+
+
+.broadcrumb nav .right-nav .right-menu .label{
+    background: var(--pure);
+    border-radius: 5px;
+    top: 40px;
+    width: 215px;
+    height: 330px;
+    left: -90px;
+    box-shadow: 0 0 3px var(--lite);
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.broadcrumb nav .right-nav .right-menu .dropdown-menu.dropdown-show{
+    display: block;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.broadcrumb nav .right-nav .right-menu .label .heading{
+    border-bottom: 1px solid var(--heaven);
+    padding: 10px 20px;
+}
+.broadcrumb nav .right-nav .right-menu .label .heading h4{
+    font-size: 14px;
+    color: var(--lite);
+}
+.broadcrumb nav .right-nav .right-menu .label .heading i{
+    color: var(--lite) !important;
+}
+
+.broadcrumb nav .right-nav .right-menu .label .body{
+    margin-top: 10px;
+    border-bottom: 1px solid var(--heaven);
+}
+.broadcrumb nav .right-nav .right-menu .label .body ul li{
+    padding: 10px 20px;
+}
+.broadcrumb nav .right-nav .right-menu .label .body .one{
+    background: #E1F0FF;
+    color: #4CA4FF;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+.broadcrumb nav .right-nav .right-menu .label .body .two{
+    background: #FFE2E5;
+    color: #F86D7C;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+.broadcrumb nav .right-nav .right-menu .label .body .three{
+    background: #FFF4DE;
+    color: #FFBA34;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+.broadcrumb nav .right-nav .right-menu .label .body .four{
+    background: #C9F7F5;
+    color: #2CCAC2;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+.broadcrumb nav .right-nav .right-menu .label .body .five{
+    background: #D1D3E0;
+    color: #404358;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+
+.broadcrumb nav .right-nav .right-menu .label .body ul li:hover{
+    background: var(--heaven);
+}
+
+.broadcrumb nav .right-nav .right-menu .label .footer{
+    margin: 10px 20px;
+}
+.broadcrumb nav .right-nav .right-menu .label .footer a{
+    font-weight: 600;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.broadcrumb nav .right-nav .right-menu .label .footer a:hover{
+    color: var(--primary);
+    background-color: var(--heaven);
+
+}
+
+
+
+/* Chat section start  */
+.main-section .broadcrumb nav .right-nav .chat-section{
+    position: relative;
+}
+.main-section .broadcrumb nav .right-nav .chat-section .chat{
+    width: 500px;
+    height: 580px;
+    overflow: auto;
+    top: -25px;
+    left: -450px;
+    box-shadow: 0 0 10px var(--lite);
+    background-color: var(--pure);
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.main-section .broadcrumb nav .right-nav .dropdown-menu.dropdown-show{
+    display: block;
+    opacity: 1;
+}
+.broadcrumb nav .right-nav .chat-section .chat .heading{
+    border-bottom: 2px solid var(--heaven);
+
+   
+}
+.broadcrumb nav .right-nav .chat-section .chat .heading .fa-times,
+.broadcrumb nav .right-nav .chat-section .chat .heading .fa-user-plus{
+    margin: 15px 20px;
+    color: var(--lite);
+    padding: 5px 8px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.broadcrumb nav .right-nav .chat-section .chat .heading .fa-times:hover{
+    color: var(--primary);
+    background: var(--heaven);
+    border-radius: 3px;
+}
+.broadcrumb nav .right-nav .chat-section .chat .heading .user p{
+    font-size: 13px;
+}
+
+.broadcrumb nav .right-nav .chat-section .chat .heading .user .fa-circle{
+    font-size: 6px;
+    color: var(--primary);
+}
+
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting,
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting-me{
+    height: 140px;
+}
+
+.broadcrumb nav .right-nav .chat-section .chat .body{
+    margin: 20px 20px 0 20px;
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .user .fa-user-circle{
+    font-size: 40px;
+    color: var(--lite);
+    margin-bottom: 10px;
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .user h4{
+    margin-top: -10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .user h4 span{
+    font-size: 12px;
+    margin-left: 3px;
+    color: var(--lite);
+}
+.broadcrumb nav .right-nav .chat-section .chat .body p{
+    max-width: 400px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #E1F0FF;
+}
+
+
+
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting-me .user-me{
+    float: right;
+}
+
+
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting-me .fa-user-circle{
+    font-size: 40px;
+    color: var(--lite);
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .user-me h4{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting-me h4 span{
+    font-size: 12px;
+    margin-right: 3px;
+    color: var(--lite);
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .chatting-me p{
+    float: right;
+    width: 400px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #98fcfc;
+}
+.broadcrumb nav .right-nav .chat-section .chat .body .user h4:hover,
+.broadcrumb nav .right-nav .chat-section .chat .body .user-me h4:hover{
+    color: var(--primary);
+}
+
+
+
+.broadcrumb nav .right-nav .chat-section .chat .footer{
+    border-top: 2px solid var(--heaven);
+}
+
+.broadcrumb nav .right-nav .chat-section .chat .footer input{
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+}
 
