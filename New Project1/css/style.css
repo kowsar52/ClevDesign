@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
 }
 /* For Color Var */
 :root{
@@ -84,8 +82,15 @@ button{
 }
 /* For Grid Finish */
 
-
-p,a{
+a{
+    color: var(--lite);
+    text-decoration: none;
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+p{
     color: var(--lite);
     font-size: 14px;
 }
@@ -113,21 +118,33 @@ body{
 
 .full-section .right-side{
     width: 100%;
+    margin-left: 25%;
+    transition: margin-left .5s ease-in-out;
+}
+.hide-sidebar .right-side{
+    width: 100%;
+    margin-left: 0;
+    transition: margin-left .5s ease-in-out;
 }
 
 /* Top menu start  */
 .full-section .top-section{
     height: 50px;
     background: var(--primary);
+    width: 100%;
+}
+
+.top-section .top-menu{
+    
 }
 
 .top-section .top-menu li{
     margin: 13px;
+
 }
 .top-section .top-menu li i{
     color: var(--pure);
     font-size: 20px;
-    
 }
 
 .top-section .top-menu .profile-section .inner-section{
@@ -332,23 +349,24 @@ body{
     border-radius: 5px;
     margin-left: -10px;
 }
-.top-section .top-menu .panel-section{
-    background-color: var(--pure);
-    width: 380px;
+.top-section .top-menu .panel-section .inner-section{
+    background-color: var(--pure) !important;
+    width: 420px;
     height: 100vh;
     top: 0px;
-    margin-left: 100px;
-    z-index: 3;
+    padding: 25px;
     overflow: auto;
     position: fixed;
+    z-index: 3;
     box-shadow: 0 0 3px var(--lite);
-    transition: margin-left .3s ease-in-out;
+    right: -420px;
+    transition: right .3s ease-in-out;
 }
 
-.dropdown .panel-section.dropdown-show{
-    margin-left: -300px;
+
+.top-section .top-menu .dropdown-menu.dropdown-show .inner-section{
+    right: 0;
     transition: all .3s ease-in-out;
-    z-index: 1;
 }
 .panel-section .head button i{
     margin-left: 50px;
@@ -572,10 +590,11 @@ body{
 }
 
 .full-section .left-side{
-    width: 30%;
+    width: 25%;
     height: 100vh;
     background-color: var(--pure);
     margin-left: 0%;
+    position: fixed;
     overflow: auto;
     transition: margin-left .5s ease-in-out;
 }
@@ -674,7 +693,25 @@ body{
     max-height: 450px;
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width:3px;
+  }
+  
+  /* Track */
+   ::-webkit-scrollbar-track {
+    background: var(--heaven);
+  }
+  
+  /* Handle */
+   ::-webkit-scrollbar-thumb {
+    background: var(--lite);
+  }
+  
+  /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover{
+    background: rgb(211, 203, 203);
+  }
 
 
 

@@ -57,6 +57,58 @@
     color: #948B90 !important;
 }
 
+.display-1{
+    font-size: 70px;
+}
+.display-2{
+    font-size: 60px;
+}
+.display-3{
+    font-size: 50px;
+}
+.display-4{
+    font-size: 40px;
+}
+.display-5{
+    font-size: 30px;
+}
+.display-6{
+    font-size: 20px;
+}
+
+.lead {
+    font-weight: 300;
+}
+.separator{
+    margin: 20px 0;
+}
+.separator-dashed{
+    border-bottom: 1px dotted var(--lite);
+}
+
+
+.separator-border-2{
+    border-bottom: 2px dotted var(--lite);
+}
+.separator-border-3{
+    border-bottom: 3px dotted var(--lite);
+}
+.separator-border-4{
+    border-bottom: 4px dotted var(--lite);
+}
+.separator-solid{
+    border-bottom: 1px  solid var(--lite);
+}
+.separator-border-2{
+    border-bottom: 2px  solid var(--lite);
+}
+.separator-border-3{
+    border-bottom: 3px  solid var(--lite);
+}
+.separator-border-4{
+    border-bottom: 4px  solid var(--lite);
+}
+
 
 
 .main-section .main-menu-top{
@@ -125,4 +177,5 @@
     color: var(--secondary);
 
 }
+
 
