@@ -16,6 +16,9 @@
     border: transparent;
     transition: all .3s ease-in-out;
 }
+.mr-2{
+    margin: 2px;
+}
 .btn:hover{
     background: rgb(177, 174, 174);
 }
@@ -32,49 +35,56 @@
     background: #D7DAE7;
     color: #000;
 }
-.btn-secondary:hover{
+.btn-secondary:hover,
+.btn-secondary.active{
     background:#b7b9c4 ;
 }
 .btn-success{
-    background: #39f114;
+    background: #61f842;
     color: #ffffff;
 }
-.btn-success:hover{
+.btn-success:hover,
+.btn-success.active{
     background:#2efa06 ;
 }
 .btn-danger{
     background: #EE2D41;
     color: #ffffff;
 }
-.btn-danger:hover{
+.btn-danger:hover,
+.btn-danger.active{
     background:#fd041d ;
 }
 .btn-warning{
     background: #EE9D01;
     color: #ffffff;
 }
-.btn-warning:hover{
+.btn-warning:hover,
+.btn-warning.active{
     background:#fda501 ;
 }
 .btn-info{
     background: #4A7DFF;
     color: #ffffff;
 }
-.btn-info:hover{
+.btn-info:hover,
+.btn-info.active{
     background:rgb(6, 124, 241) ;
 }
 .btn-light{
     background: #E4E6EF;
     color: rgb(0, 0, 0);
 }
-.btn-light:hover{
+.btn-light:hover,
+.btn-light.active{
     background:#f6f7fa ;
 }
 .btn-dark{
     background: #131628;
     color: #ffffff;
 }
-.btn-dark:hover{
+.btn-dark:hover,
+.btn-dark.active{
     background:#0f121f ;
 }
 .btn-link{
@@ -93,5 +103,73 @@
 .btn-block{
     width: 100%;
     display: block;
+}
+
+.button-group ul{
+    display: flex;
+}
+
+.font-weight-lighterb{
+    font-weight: lighter;
+}
+.font-weight-light{
+    font-weight: 300;
+}
+.font-weight-normal{
+    font-weight: normal;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-bolder{
+    font-weight: bolder;
+}
+.font-weight-boldest{
+    font-weight: 900;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-lowercase{
+    text-transform: lowercase;
+}
+.btn-pill{
+    border-radius: 50px;
+}
+.btn-square{
+    border-radius: 0px;
+}
+.btn-default{
+    background: #ececee;
+    color: #afafae;
+}
+.btn-default:hover{
+    background: #ececee;
+    color: var(--primary);
+}
+.btn-light{
+    background: #dedfe0;
+    color: #8f8f8f;
+}
+.btn-light:hover{
+    color: var(--primary);
+}
+.btn-clean{
+    background-color:transparent;
+    color: #afafae;
+}
+.btn-clean:hover{
+    background-color: transparent;
+    color: var(--primary);
+}
+.font-size-h5{
+    font-size: 18px;
+}
+.font-size-h6{
+    font-size: 16px;
+}
+.font-size-h3{
+    font-size: 22px;
 }
 
