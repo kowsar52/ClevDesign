@@ -997,3 +997,71 @@ body{
     margin-top: 20px;
 }
 
+
+.main-section .main-menu-top{
+    background-color: var(--pure);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(207, 205, 205);
+}
+.main-section .main-menu-top i{
+    color: var(--primary);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.main-section .main-menu-top p{
+    color: var(--secondary);
+}
+.main-section .main-menu-top a{
+    color: var(--primary);
+    transition: all .3s ease-in-out;
+}
+
+.main-section .main-menu-top a:hover{
+    color: rgb(48, 114, 108);
+}
+
+
+/* CARD Start  */
+.main-section .card{
+    background-color: var(--pure);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(207, 205, 205);
+}
+.main-section .card-one{
+    margin: 10px 15px 30px 0;
+}
+.main-section .card-two{
+    margin: 10px 0 30px 15px;
+}
+.main-section .card .heading{
+    border-bottom: 2px solid var(--heaven);
+    padding: 15px 30px;
+}
+.main-section .card .body{
+    padding: 25px 30px;
+}
+.main-section .card .body .title{
+    margin-bottom: 15px;
+}
+.main-section .card .body .body-section{
+    background-color: var(--heaven);
+    border-radius: 5px;
+    padding: 4px;
+}
+.main-section .card .body .body-section .body-content{
+    background-color: var(--pure);
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+.main-section .card .body .body-section .body-content p{
+    line-height: 2.5;
+    color: var(--secondary);
+}
+
+.main-section .card .body .card-p{
+    margin: 50px 0 20px 0;
+    color: var(--secondary);
+
+}
