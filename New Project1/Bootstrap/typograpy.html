@@ -1120,9 +1120,6 @@
                     <!-- Left side  -->
                     <div class="row">
                         <div class="left col-6">
-
-                                <div class="row">
-                                    <div class="col-12">
         
                                         <div class="card card-one">
                                             <div class="heading">
@@ -1156,18 +1153,12 @@
                                             </div>
                                         </div>
             
-                                        
-            
-                                    </div>
-            
-                                    <div class="col-12">
-            
                                         <div class="card card-one">
                                             <div class="heading">
                                                 <h4>Headings</h4>
                                             </div>
                                             <div class="body">
-                                                <h5 class="title">All HTML headings,through, are available:</h5>
+                                                <h5 class="title">All HTML headings,<span class="title-style">h1</span> through,<span class="title-style">h6</span> are available:</h5>
                 
                                                 <div class="body-section">
                                                     <div class="body-content">
@@ -1201,7 +1192,7 @@
                                                         
                                                     </div>
                                                 </div>
-                                                <p class="card-p">Make a paragraph stand out by adding .lead:</p>
+                                                <p class="card-p">Make a paragraph stand out by adding <span class="title-style">.lead</span>:</p>
                                                 <div class="body-section">
                                                     <div class="body-content">
                                                         <p class="lead">
@@ -1210,21 +1201,77 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            
+                                            </div>   
                                         </div>
-            
-                                        
-            
-                                    </div>
-                                </div>
-        
-                        </div>
+                                        <div class="card card-one">
+                                            <div class="heading">
+                                                <h4>Font Sizes</h4>
+                                            </div>
+                                            <div class="body">
+                                                <h5 class="title">Use <span class="title-style">font-size-{xs|sm|lg|h1|h2|h3|h4|h5|h6}</span>classes to set required font size.</h5>
+                
+                                                <div class="body-section">
+                                                    <div class="body-content">
+                                                                                                                
+                                                        <p class="font-size-xs">Extra small size</p>
+                                                        <p class="font-size-sm">Small size</p>
+                                                        <p class="font-size-lg">Large size</p>
+                                                        <p class="font-size-h6">Heading 6 size</p>
+                                                        <p class="font-size-h5">Heading 5 size</p>
+                                                        <p class="font-size-h4">Heading 4 size</p>
+                                                        <p class="font-size-h3">Heading 3 size</p>
+                                                        <p class="font-size-h2">Heading 2 size</p>
+                                                        <p class="font-size-h1">Heading 1 size</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <p class="card-p">Use <span class="title-style">.font-size-{xs|sm|lg|xl|xxs}-{|h1|h2|h3|h4|h5|h6|}</span>classes to set responsive font sizes.</p>
+
+                                                <div class="body-section">
+                                                    <div class="body-content">
+                                                                                                        
+                                                    <p class="font-size-h4 font-size-lg-h2">H2 Desktop, H4 Mobile</p>
+                                                    <p class="font-size-h5 font-size-lg-h3">H3 Desktop, H5 Mobile</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <p class="card-p">Use <span class="title-style">.display{1|2|3|4}-{xs|sm|lg|xl|xxs}</span>classes to set responsive display texts</p>
+                                                <div class="body-section">
+                                                    <div class="body-content">
+                                                                                                        
+                                                    <p class="display3 display4-lg">Responve Text 1</p>
+                                                    <p class="display2 display3-lg">Responve Text 2</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="card card-one">
+                                            <div class="heading">
+                                                <h4>Font Weights</h4>
+                                            </div>
+                                            <div class="body">
+                                                <h5 class="title">Use <span class="title-style">.font-weight-{lighter|light|normal|bold|bolder|boldest}</span>classes to set font weight.</h5>
+                
+                                                <div class="body-section">
+                                                    <div class="body-content">
+                                                                                                                
+                                                        <p class="font-weight-lighter">Lighter Text</p>
+                                                        <p class="font-weight-light">Light Text</p>
+                                                        <p class="font-weight-normal">Normal Text</p>
+                                                        <p class="font-weight-bold">Bold Text</p>
+                                                        <p class="font-weight-bolder">Bolder Text</p>
+                                                        <p class="font-weight-boldest">Boldest Text</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                             </div>
 
                         <div class="right col-6">
-                            <div class="row">
-                                <div class="col-12">
+                    
                                     <div class="card card-two">
                                         <div class="heading">
                                             <h4>General</h4>
@@ -1259,9 +1306,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="col-12">
                                             <div class="card card-two">
                                                 <div class="heading">
                                                     <h4>Links</h4>
@@ -1280,8 +1325,7 @@
                                                     
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        
                                     <div class="card card-two">
                                         <div class="heading">
                                             <h4>Separators</h4>
@@ -1315,21 +1359,102 @@
                                                     
                                                 </div>
                                             </div>
+                                            <p class="card-p">Use .separator-{color}classe to set separator colors.</p>
+
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                                                                
+                                                <div class="separator separator-dashed separator-border-2 separator-primary"></div>
+                                                <div class="separator separator-solid separator-border-2 separator-success"></div>
+                                                <div class="separator separator-dashed separator-border-2 separator-danger"></div>
+                                                <div class="separator separator-solid separator-border-2 separator-warning"></div>
+                                                <div class="separator separator-dashed separator-border-2 separator-info"></div>
+                                                <div class="separator separator-solid separator-border-2 separator-dark"></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-two">
+                                        <div class="heading">
+                                            <h4>Blockquotes</h4>
+                                        </div>
+                                        <div class="body">
+                                            <h5 class="title">For quoting blocks of content from another source within your document. Wrap <blockquote class="blockquote">around any HTML as the quote.</h5>
+            
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                                                                    
+                                                    <blockquote class="blockquote">
+                                                        <p class="mb-0">Lorem ipsum dolor sit amet. Integer posuere erat a ante.</p>
+                                                    </blockquote>
+                                                    
+                                                </div>
+                                            </div>
+                                            <p class="card-p">Format for naming a source</p>
+
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                 
+                                                <blockquote class="blockquote">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                    <footer class="blockquote-footer">Someone famous in
+                                                        <cite title="Source Title">Source Title</cite>
+                                                    </footer>
+                                                </blockquote>    
+                                                
+              
+                                                    
+                                                </div>
+                                            </div>
+                                            <p class="card-p">Use .text-centerto align blockquote to center. </p>
+
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                  
+                                                <blockquote class="blockquote text-center">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                    <footer class="blockquote-footer">Someone famous in
+                                                        <cite title="Source Title">Source Title</cite>
+                                                    </footer>
+                                                </blockquote>
+                                                    
+                                                </div>
+                                            </div>
+                                            <p class="card-p">Use .separator-{color}classe to set separator colors.</p>
+
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                  
+                                                    <blockquote class="blockquote text-center">
+                                                        <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                        <footer class="blockquote-footer">Someone famous in
+                                                            <cite title="Source Title">Source Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                    
+                                                </div>
+                                            </div>
+                                            <p class="card-p"></p>
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                                                                
+                                                    <blockquote class="blockquote text-right">
+                                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <footer class="blockquote-footer">Someone famous in
+                                                            <cite title="Source Title">Source Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                         
-                                </div>
-        
-        
-                                
+                                </div>    
                             </div>
-                        
-                    </div>
                         </div>
                     </div>
-
-                   </div>
-                </div>
 
                 <!-- main section finish  -->
             </div>

@@ -5,14 +5,7 @@
     color: #3D313F !important;
 }
 .text-success{
-    color: #70C5FF !important;
-}
-
-.text-danger{
-    color: #F65460 !important;
-}
-.text-danger{
-    color: #F65460 !important;
+    color: #11f856 !important;
 }
 .text-danger{
     color: #F65460 !important;
@@ -57,6 +50,14 @@
     color: #948B90 !important;
 }
 
+.title-style{
+    background: rgb(235, 230, 230);
+    color:var(--lite-denger);
+    font-size: 12px;
+    padding:0 2px;
+    border-radius: 5px;
+}
+
 .display-1{
     font-size: 70px;
 }
@@ -75,10 +76,61 @@
 .display-6{
     font-size: 20px;
 }
+.font-size-xs{
+    font-size: 10px;
+}
+.font-size-sm{
+    font-size: 12px;
+}
+.font-size-lg{
+    font-size: 14px;
+}
+.font-size-h6{
+    font-size: 15px;
+}
+.font-size-h5{
+    font-size: 16px;
+}
+.font-size-h4{
+    font-size: 18px;
+}
+.font-size-h3{
+    font-size: 20px;
+}
+.font-size-h2{
+    font-size: 22px;
+}
+.font-size-h1{
+    font-size: 24px;
+}
 
-.lead {
+.display4-lg{
+    font-size: 30px;
+}
+.display3-lg{
+    font-size: 45px;
+}
+.font-weight-lighter{
+    font-weight: lighter;
+}
+.font-weight-light{
     font-weight: 300;
 }
+.font-weight-normal{
+    font-weight: 400;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-bolder{
+    font-weight: bolder;
+}
+.font-weight-boldest{
+    font-weight: 900;
+}
+/* left cards finish */
+
+/* Right cards start  */
 .separator{
     margin: 20px 0;
 }
@@ -108,8 +160,24 @@
 .separator-border-4{
     border-bottom: 4px  solid var(--lite);
 }
-
-
+.separator-primary{
+    border-bottom: 3px dotted #30C9D2 !important;
+}
+.separator-success{
+    border-bottom: 3px solid #11f856 !important;
+}
+.separator-danger{
+    border-bottom: 3px dotted #F65460 !important;
+}
+.separator-warning{
+    border-bottom: 3px solid #FFB018 !important;
+}
+.separator-info{
+    border-bottom: 3px dotted #7C9FFF !important;
+}
+.separator-dark{
+    border-bottom: 3px solid #544E53 !important;
+}
 
 
 
