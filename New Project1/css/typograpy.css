@@ -5,7 +5,7 @@
     color: #3D313F !important;
 }
 .text-success{
-    color: #11f856 !important;
+    color: #08db47 !important;
 }
 .text-danger{
     color: #F65460 !important;
@@ -164,7 +164,7 @@
     border-bottom: 3px dotted #30C9D2 !important;
 }
 .separator-success{
-    border-bottom: 3px solid #11f856 !important;
+    border-bottom: 3px solid #08db47 !important;
 }
 .separator-danger{
     border-bottom: 3px dotted #F65460 !important;
@@ -178,8 +178,9 @@
 .separator-dark{
     border-bottom: 3px solid #544E53 !important;
 }
-
-
-
+.footer{
+    color: #c0bebd;
+    font-size: 12px;
+}
 
 

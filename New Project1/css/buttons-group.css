@@ -1,0 +1,8 @@
+.btn-group{
+    background-color: var(--heaven);
+}
+.btn-secondary{
+    background-color: var(--heaven) !important;
+    padding: 5px;
+    margin: 0px;
+}

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | 1</title>
+    <title>Bootsrap | Buttons Groups</title>
 
     <!-- css linking -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/buttons-group.css">
     <link rel="stylesheet" media="screen and (max-width: 480px)" href="../css/responsive-sm.css">
     <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 950px)" href="../css/responsive-md.css">
     <link rel="stylesheet" media="screen and (min-width: 950px) and (max-width: 1200px)" href="../css/responsive-lg.css">
@@ -360,10 +360,10 @@
                                             
                                         </li>
                                         <li>
-                                            <a href="javascript:;"><i class="fas fa-circle"></i>Buttons</a>
+                                            <a href="../Bootstrap/buttons.html"><i class="fas fa-circle"></i>Buttons</a>
                                         </li>
                                         <li>
-                                            <a href="../Bootstrap/buttons-group.html"><i class="fas fa-circle"></i>Button Groups</a>
+                                            <a href="#"><i class="fas fa-circle"></i>Button Groups</a>
                                         </li>
     
                                         <li>
@@ -1012,10 +1012,10 @@
                         <div class="broadcrumb">
                             <nav class=" flex space-between">
                                 <div class="left-nav flex items-center">
-                                    <h2>Buttons</h2>
+                                    <h2>Typography</h2>
                                 <a href="#">Bootstrap</a>
                                 <i class="fas fa-circle"></i>
-                                <a href="#">Buttons</a>
+                                <a href="#">Typography</a>
                                 </div>
     
                                 <div class="right-nav flex items-center">
@@ -1116,504 +1116,51 @@
 
                         <div class="main-menu-top flex items-center">
                             <i class="fas fa-assistive-listening-systems"></i>
-                            <p>Metronic extends Bootstrap Buttonswith a variety of options to provide unique looking buttons that matches Metronic's design standards.
-                                For more info on the original Bootstrap utilities please visit the official <a href="#">Bootstrap Documentation.</a>
+                            <p>Metronic extends Bootstrap Button-Groupwith a variety of options to provide unique looking button groups that match Metronic's design standards.
+                                For more info on the original Bootstrap Button-Group please visit the official <a href="#"> Bootstrap Documentation.</a>
                             </p>
                         </div>
 
                         <div class="row">
                             <div class="left col-6">
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Base Examples</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more. <br>
-                                            Use <span class="title-style">btn-{color}</span> class to set custom color for buttons where <span class="title-style">{color}</span> can be
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                <button type="button" class="btn btn-primary">Primary</button>
-                                                <button type="button" class="btn btn-secondary">Secondary</button>
-                                                <button type="button" class="btn btn-success">Success</button>
-                                                <button type="button" class="btn btn-danger">Danger</button>
-                                                <button type="button" class="btn btn-warning">Warning</button>
-                                                <button type="button" class="btn btn-info">Info</button>
-                                                <button type="button" class="btn btn-light">Light</button>
-                                                <button type="button" class="btn btn-dark">Dark</button>
-                                                <a class="btn btn-link">Link</a>
-                                                
+                                    <div class="card card-one">
+                                        <div class="heading">
+                                            <h4>Basic Example</h4>
+                                        </div>
+                                        <div class="body">
+                                            <h5 class="title">Wrap a series of buttons with .btnin .btn-group.</h5>
+            
+                                            <div class="body-section">
+                                                <div class="body-content">
+                                                    
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary">Left</button>
+                                                    <button type="button" class="btn btn-secondary">Middle</button>
+                                                    <button type="button" class="btn btn-secondary">Right</button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success">Left</button>
+                                                    <button type="button" class="btn btn-success">Middle</button>
+                                                    <button type="button" class="btn btn-success">Right</button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-primary">Left</button>
+                                                    <button type="button" class="btn btn-primary">Middle</button>
+                                                    <button type="button" class="btn btn-primary">Right</button>
+                                                </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Button Tags</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            The <span class="title-style">.btn</span>classes are designed to be used with the<span class="title-style"> button</span> element. However, you can also use these classes on <span class="title-style">a</span> or <span class="title-style">inpute</span> lements (though some browsers may render slightly different).
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            <a class="btn btn-secondary" href="#" role="button">Link</a>
-                                            <button class="btn btn-secondary" type="submit">Button</button>
-                                            <input class="btn btn-secondary" type="button" value="Input"/>
-                                            <input class="btn btn-secondary" type="submit" value="Submit"/>
-                                            <input class="btn btn-secondary" type="reset" value="Reset"/>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Outline Buttons</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            The Replace the default modifier classes with <span class="title-style">.btn-outline-*</span>to remove all background images and colors on any button.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                        
-                                            <button type="button" class="btn btn-outline btn-outline-primary">Primary</button>
-                                            <button type="button" class="btn btn-outline btn-outline-secondary">Secondary</button>
-                                            <button type="button" class="btn btn-outline btn-outline-success">Success</button>
-                                            <button type="button" class="btn btn-outline btn-outline-danger">Danger</button>
-                                            <button type="button" class="btn btn-outline btn-outline-warning">Warning</button>
-                                            <button type="button" class="btn btn-outline btn-outline-info">Info</button>
-                                            <button type="button" class="btn btn-outline btn-outline-dark">Dark</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Sizes</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Fancy larger or smaller buttons? Add <span class="title-style">.btn-lg</span> or <span class="title-style">.btn-sm</span> for additional sizes.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            
-                                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                                            <button type="button" class="btn btn-primary">Default button</button>
-                                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                        <p class="card-p">
-                                            Add block type buttons that span the full width of a parent by adding <span class="title-style">btn-block</span>.
-                                        </p>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            
-                                            
-                                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                            <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>States</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            <h3>Active State</h3>
-                                            Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active with <span class="title-style">.active</span>.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            <button class="btn btn-primary">Active state</button>
-                                            <button class="btn btn-secondary">Active state</button><br>
-                                            <button class="btn btn-success">Active state</button>
-                                            <button class="btn btn-danger">Active state</button>  
-                                                <br>                                     
-                                            <button class="btn btn-primary active">Active state</button>
-                                            <button class="btn btn-secondary active">Active state</button>
-                                            <br>
-                                            <button class="btn btn-success active">Active state</button>
-                                            <button class="btn btn-danger active">Active state</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                        <p class="card-p">
-                                            <h3>Disabled State</h3>
-                                            Make buttons look inactive by adding the disabledboolean attribute to any button element.
-                                        </p>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                    
-                                            <button class="btn btn-primary" >Disabled state</button>
-                                            <button class="btn btn-success" >Disabled state</button>
-                                            <button class="btn btn-danger" >Disabled state</button>
-                                            <button class="btn btn-warning" >Disabled state</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Checkbox And Radio Buttons</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Bootstrap’s button styles can be applied to other elements, such as labels, to provide checkbox or radio style button toggling.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            <button class="btn btn-success">Checked</button>                                       
-                                            </div>
-                                        </div>
-                                        <p class="card-p"></p>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                            
-                                                <div class="button-group">
-                                                    <ul>
-                                                        <li class="btn-success">
-                                                            <button class="btn btn-success active">Active</button>                                      
-                                                        </li>
-                                                        <li class="btn-success">
-                                                            <button class="btn btn-success">Redio</button> 
-                                                        </li>
-                                                        <li class="btn-success">
-                                                            <button class="btn btn-success">Redio</button>
-                                                        </li>
-                                                    </ul>  
-                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Button Font Styles</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Button font styles can be set using special helper classes <span class="title-style">font-weight-{lighter|light|normal|bold|bolder|boldest}.</span>
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                            
-                                                <button class="btn btn-secondary font-weight-lighter mr-2">Lighter</button>
-                                                <button class="btn btn-secondary font-weight-light mr-2">Light</button>
-                                                <button class="btn btn-secondary font-weight-normal mr-2">Normal</button>
-                                                <button class="btn btn-secondary font-weight-bold mr-2">Bold</button>
-                                                <button class="btn btn-secondary font-weight-bolder">Bolder</button>
-                                                <button class="btn btn-secondary font-weight-boldest">Boldest</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                        <p class="card-p">
-                                            Uppercase and lowercase texts can be set using <span class="title-style">.text-uppercaseand</span>.and <span class="title-style">.text-lowercaseclasses</span>. respectively.
-                                        </p>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                            
-                                                <button class="btn btn-secondary text-uppercase">Uppercase</button>
-                                                <button class="btn btn-secondary text-lowercase">Lowercase</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Button Styles</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Use <span class="title-style">.btn-pillclasses</span> to have pill style buttons.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                                
-                                                <button class="btn btn-success font-weight-bold btn-pill">Success</button>
-                                                <button class="btn btn-primary font-weight-bold btn-pill">Primary</button>
-                                                <button class="btn btn-danger font-weight-bold btn-pill">Danger</button>
-                                                <button class="btn btn-warning font-weight-bold btn-pill">Warning</button>
-                                                <button class="btn btn-dark font-weight-bold btn-pill">Dark</button>
-                                            </div>
-                                        </div>
-                                        <p class="card-p">
-                                            Use <span class="title-style">.btn-square</span>classes to have square style buttons.
-                                        </p>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                                
-                                                <button class="btn btn-success font-weight-bold btn-square">Success</button>
-                                                <button class="btn btn-primary font-weight-bold btn-square">Primary</button>
-                                                <button class="btn btn-danger font-weight-bold btn-square">Danger</button>
-                                                <button class="btn btn-warning font-weight-bold btn-square">Warning</button>
-                                                <button class="btn btn-dark font-weight-bold btn-square">Dark</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Custom Buttons</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Metronic extends Bootstrap with custom button styles.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                                                                    
-                                            <button class="btn btn-default font-weight-bold ">Default Button</button>
-                                            <button class="btn btn-light font-weight-bold">Light Button</button>
-                                            <button class="btn btn-clean font-weight-bold">Clean Button</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card card-one">
-                                    <div class="heading">
-                                        <h4>Customed Buttons</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Metronic Bootstrap standard unitlity classes to change button size and spacing.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                                                        
-                                                <button class="btn btn-default font-weight-bold font-size-h5 px-8 py-3 mr-2">Button</button>
-                                                <button class="btn btn-danger font-weight-bold font-size-h6 px-10 py-4 mr-2">Button</button>
-                                                <button class="btn btn-primary font-weight-bold font-size-h3 px-12 py-5">Button</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
 
                             <div class="right col-6">
-
-                                <div class="card card-two">
-                                    <div class="heading">
-                                        <h4>Light Buttons</h4>
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">
-                                            Use <span class="title-style"> btn-light-{color}</span> class to have a custom button style with a lighter background color and dark font color.
-                                        </h5>
-                                        <div class="body-section">
-                                            <div class="body-content">
-                                                
-                                            
-                                            <button class=" btn-light btn-light-success ">Success</button>
-                                            <button class=" btn-light btn-light-primary ">Primary</button>
-                                            <button class=" btn-light btn-light-danger ">Danger</button>
-                                            <button class=" btn-light btn-light-warning ">Warning</button>
-                                            <button class=" btn-light btn-light-dark ">Dark</button>
-                                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Light Hover Buttons</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use <span class="title-style">btn-light-{color}</span> class to have a custom button style with a lighter background color and dark font color.
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                                                                
-                                        <a href="#" class="btn-text btn-text-success">Success</a>
-                                        <a href="#" class="btn-text btn-text-primary ">Primary</a>
-                                        <a href="#" class="btn-text btn-text-danger ">Danger</a>
-                                        <a href="#" class="btn-text btn-text-warning ">Warning</a>
-                                        <a href="#" class="btn-text btn-text-dark ">Dark</a>    
-                                        
-                                        
-                                                                                        
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Hover Background Buttons</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use <span class="title-style">btn-light-{color}</span> class to have a custom button style with a lighter background color and dark font color.
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                                                                                                
-                                        <a href="#" class="btn-hover btn-hover-success btn-text-success">Success</a>
-                                        <a href="#" class="btn-hover btn-hover-primary btn-text-primary">Primary</a>
-                                        <a href="#" class="btn-hover btn-hover-danger btn-text-danger">Danger</a>
-                                        <a href="#" class="btn-hover btn-hover-warning btn-text-warning">Warning</a>
-                                        <a href="#" class="btn-hover btn-hover-dark btn-text-dark">Dark</a>                                         
-          
-                                        
-                                        
-                                                                                        
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Transparent Buttons</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use btn-transparent-{color}class to have a custom button style with a transparent background color.
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                                                                                                
-                                       
-                                        <div class="d-flex align-items-center p-4 bg-dark">
-                                            <a href="#" class="btn btn-transparent-success font-weight-bold mr-2">Success</a>
-                                            <a href="#" class="btn btn-transparent-primary font-weight-bold mr-2">Primary</a>
-                                            <a href="#" class="btn btn-transparent-danger font-weight-bold mr-2">Danger</a>
-                                            <a href="#" class="btn btn-transparent-warning font-weight-bold mr-2">Warning</a>
-                                            <a href="#" class="btn btn-transparent-white font-weight-bold">White</a>
-                                        </div>
-                                        
-                                        
-                                                                                        
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Transparent Hover Buttons</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use btn-hover-transparent-{color}class to have a custom button style with a transparent hover background color.
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                             
-                                            <div class="d-flex align-items-center p-4 bg-dark">
-                                                <a href="#" class="btn btn-hover-transparent-success font-weight-bold mr-2">Success</a>
-                                                <a href="#" class="btn btn-hover-transparent-primary font-weight-bold mr-2">Primary</a>
-                                                <a href="#" class="btn btn-hover-transparent-danger font-weight-bold mr-2">Danger</a>
-                                                <a href="#" class="btn btn-hover-transparent-warning font-weight-bold mr-2">Warning</a>
-                                                <a href="#" class="btn btn-hover-transparent-white font-weight-bold">White</a>
-                                            </div>
-                                                                           
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Link Buttons</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use btn-link-{color}class to have a custom link button.
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                           
-                                        <a href="#" class="btn btn-link-success font-weight-bold">Success</a>
-                                        <a href="#" class="btn btn-link-primary font-weight-bold">Primary</a>
-                                        <a href="#" class="btn btn-link-danger font-weight-bold">Danger</a>
-                                        <a href="#" class="btn btn-link-warning font-weight-bold">Warning</a>
-                                        <a href="#" class="btn btn-link-dark font-weight-bold">Dark</a>                       
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Button Text Colors</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use btn-text-{font-color}class to set custom color for button texts where {font-color}can be white|
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                                                                
-                                        <a href="#" class="btn btn-light btn-text-success btn-hover-text-success font-weight-bold">Success</a>
-                                        <a href="#" class="btn btn-light btn-text-primary btn-hover-text-primary font-weight-bold">Primary</a>
-                                        <a href="#" class="btn btn-light btn-text-danger btn-hover-text-danger font-weight-bold">Danger</a>
-                                        <a href="#" class="btn btn-light btn-text-warning btn-hover-text-dark-50 font-weight-bold">Warning</a>
-                                        <a href="#" class="btn btn-light btn-text-dark btn-hover-text-dark font-weight-bold">Dark</a>                      
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="card card-two">
-                                <div class="heading">
-                                    <h4>Button Text Colors</h4>
-                                </div>
-                                <div class="body">
-                                    <h5 class="title">
-                                        Use btn-text-{font-color}class to set custom color for button texts where {font-color}can be white|
-                                    </h5>
-                                    <div class="body-section">
-                                        <div class="body-content">
-                                                                                
-                                        <a href="#" class="btn btn-light btn-text-success btn-hover-text-success font-weight-bold">Success</a>
-                                        <a href="#" class="btn btn-light btn-text-primary btn-hover-text-primary font-weight-bold">Primary</a>
-                                        <a href="#" class="btn btn-light btn-text-danger btn-hover-text-danger font-weight-bold">Danger</a>
-                                        <a href="#" class="btn btn-light btn-text-warning btn-hover-text-dark-50 font-weight-bold">Warning</a>
-                                        <a href="#" class="btn btn-light btn-text-dark btn-hover-text-dark font-weight-bold">Dark</a>                      
-                                        </div>
-                                    </div>
-                                    <p class="card-p"></p>
-                                </div>
-
+                                
                             </div>
                         </div>
-
                        </div>
-
                 </div>
 
                 <!-- main section finish  -->
