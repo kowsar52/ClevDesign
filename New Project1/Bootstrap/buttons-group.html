@@ -50,7 +50,7 @@
                                 <div class="menu-item dropdown-trigger ">
 
                                         <i class="fas fa-th-large icon"></i>
-                                        <a href="#">Applications</a>
+                                        <a href="javascrip:;">Applications</a>
                                         <i class="fas fa-angle-right rotate-icon"></i>
                                 </div>
                                 
@@ -1212,11 +1212,10 @@
                                                     <div class="btn-group-vertical">
                                                         <button type="button" class="btn btn-outline-secondary">Button</button>
                                                         <button type="button" class="btn btn-outline-secondary">Button</button>
-
-                                                        <div class="btn-group-dropdown btnDropdown">
-                                                            <button class="btn btn-outline-secondary dropdown-toggle"> Dropdown
+                                                        <div class="btn-group-dropdown dropdown">
+                                                            <button class="btn btn-outline-secondary dropdown-trigger active"> Dropdown
                                                             </button>
-                                                            <div id="dropdown-btn">
+                                                            <div class="dropdown-menu btn-dropdown">
                                                                 <a class="dropdown-item" href="#">Dropdown link</a>
                                                                 <a class="dropdown-item" href="#">Dropdown link</a>
                                                             </div>
@@ -1232,14 +1231,44 @@
 
                                     </div>
 
+                                    <div class="right col-6">
+                                        <div class="card card-two">
+                                            <div class="heading">
+                                                <h4>Nesting</h4>
+                                            </div>
+                                            <div class="body">
+                                                <h5 class="title">Place a .btn-groupwithin another .btn-groupwhen you want nested dropdown menus mixed with a series of buttons.</h5>
+                
+                                                <div class="body-section">
+                                                    <div class="body-content">
+                                                                                                
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-primary font-weight-bold">1</button>
+                                                            <button type="button" class="btn btn-success font-weight-bold">2</button>
+                                                            <button type="button" class="btn btn-danger font-weight-bold">3</button>
+                                                            <button type="button" class="btn btn-warning font-weight-bold">4</button>
+                                                            <button type="button" class="btn btn-warning font-weight-bold">5</button>
+                                                            <button type="button" class="btn btn-warning font-weight-bold">6</button>
 
-                            </div>
-
-                            <div class="right col-6">
-                                
-                            </div>
-                        </div>
+                                                            <div class="btn-group" role="group">
+                                                                <button id="btnGroupDrop1" type="button" class="btn btn-dark font-weight-bold dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Dropdown
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                        </div>
+                    </div>
                 </div>
 
                 <!-- main section finish  -->

@@ -47,11 +47,11 @@
 }
 .btn-outline-success{
     background-color: transparent;
-    color: #14b306;
-    border: 1px solid #14d802;
+    color: green;
+    border: 1px solid green;
 }
 .btn-outline-success:hover{
-    background: #14d802 !important;
+    background: green !important;
     color: #ffffff;
 }
 .btn-outline-danger{
@@ -118,12 +118,12 @@
     background:#b7b9c4 ;
 }
 .btn-success{
-    background: #14d802;
+    background: rgb(6, 153, 6);
     color: #ffffff;
 }
 .btn-success:hover,
 .btn-success.active{
-    background:#2aee03 ;
+    background:rgb(2, 204, 2);
 }
 .btn-danger{
     background: #EE2D41;
@@ -273,10 +273,10 @@
 
 .btn-light-success{
     background: #b7fcb0;
-    color: #14b306;
+    color: green;
 }
 .btn-light-success:hover{
-    background: #14b306;
+    background: green;
     color: #ffff;
 }
 .btn-light-danger{
@@ -328,11 +328,11 @@
 
 .btn-text-success{
     background: none;
-    color: #14b306;
+    color: green;
 }
 .btn-text-success:hover{
     background: #b7fcb0;
-    color: #14b306;
+    color: green;
 }
 .btn-text-danger{
     background: none;
@@ -348,7 +348,7 @@
     color:#FFA800;
 }
 .btn-text-warning:hover{
-    background: #f8e0b1;
+    background: #ffffff;
     color:#FFA800;
 }
 .btn-text-dark{
@@ -384,10 +384,10 @@
 
 .btn-hover-success{
     background: none;
-    color: #14b306;
+    color: green;
 }
 .btn-text-success:hover{
-    background: #14b306;
+    background: green;
     color: #fff;
 }
 .btn-text-danger{

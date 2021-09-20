@@ -1,7 +1,6 @@
 $(document).ready(function(){
     trigger();
     dropdown();
-    btnDropdown();
 
 })
 
@@ -42,11 +41,5 @@ function dropdown(){
     
     })
 
-}
-
-function btnDropdown(){
-    $('.dropdown-toggle').on('click',function(){
-        $('#dropdown-btn').toggleClass('dropdown-show')
-    })
 }
 
