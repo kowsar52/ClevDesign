@@ -1135,17 +1135,17 @@
                                             <div class="body-section">
                                                 <div class="body-content">
                                                     
-                                                <div class="btn-group">
+                                                <div class="btn-group p-5">
                                                     <button type="button" class="btn btn-secondary">Left</button>
                                                     <button type="button" class="btn btn-secondary">Middle</button>
                                                     <button type="button" class="btn btn-secondary">Right</button>
                                                 </div>
-                                                <div class="btn-group mt-5">
+                                                <div class="btn-group p-5">
                                                     <button type="button" class="btn btn-success">Left</button>
                                                     <button type="button" class="btn btn-success">Middle</button>
                                                     <button type="button" class="btn btn-success">Right</button>
                                                 </div>
-                                                <div class="btn-group mt-5">
+                                                <div class="btn-group p-5">
                                                     <button type="button" class="btn btn-primary">Left</button>
                                                     <button type="button" class="btn btn-primary">Middle</button>
                                                     <button type="button" class="btn btn-primary">Right</button>
@@ -1166,17 +1166,17 @@
                                             <div class="body-section">
                                                 <div class="body-content">
                                                                                                 
-                                                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                                <div class="btn-group p-5 btn-group-lg" role="group" aria-label="Large button group">
                                                     <button type="button" class="btn btn-lg btn-outline btn-outline-secondary">Left</button>
                                                     <button type="button" class="btn btn-lg btn-outline btn-outline-secondary">Middle</button>
                                                     <button type="button" class="btn btn-lg btn-outline btn-outline-secondary">Right</button>
                                                 </div>
-                                                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                                <div class="btn-group p-5 btn-group-lg" role="group" aria-label="Large button group">
                                                     <button type="button" class="btn btn-md btn-outline btn-outline-secondary">Left</button>
                                                     <button type="button" class="btn btn-md btn-outline btn-outline-secondary">Middle</button>
                                                     <button type="button" class="btn btn-md btn-outline btn-outline-secondary">Right</button>
                                                 </div>
-                                                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                                <div class="btn-group p-5 btn-group-lg" role="group" aria-label="Large button group">
                                                     <button type="button" class="btn btn-sm btn-outline btn-outline-secondary">Left</button>
                                                     <button type="button" class="btn btn-sm btn-outline btn-outline-secondary">Middle</button>
                                                     <button type="button" class="btn btn-sm btn-outline btn-outline-secondary">Right</button>
@@ -1210,18 +1210,22 @@
                                                 <div class="body-content">
                                                                                                     
                                                     <div class="btn-group-vertical">
-                                                        <button type="button" class="btn btn-outline-secondary">Button</button>
-                                                        <button type="button" class="btn btn-outline-secondary">Button</button>
-                                                        <div class="btn-group-dropdown dropdown">
-                                                            <button class="btn btn-outline-secondary dropdown-trigger active"> Dropdown
+                                                        <button class="btn btn-outline-secondary">Button</button>
+                                                        <button class="btn btn-outline-secondary">Button</button>
+                                                        <div class="btn btn-outline-secondary dropdown">
+                                                            <button class=" dropdown-trigger"> Dropdown<i class="fas fa-angle-down text-secondary p-4"></i>
                                                             </button>
-                                                            <div class="dropdown-menu btn-dropdown">
-                                                                <a class="dropdown-item" href="#">Dropdown link</a>
-                                                                <a class="dropdown-item" href="#">Dropdown link</a>
-                                                            </div>
+                                                            
+                                                                <ul class="dropdown-menu btn-dropdown">
+                                                                    <li><a href="#">Dropdown link</a></li>
+                                                                    <li><a href="#">Dropdown link</a></li>
+
+                                                                </ul>
+                                                        
+                                                            
                                                         </div>
-                                                        <button type="button" class="btn btn-outline-secondary">Button</button>
-                                                        <button type="button" class="btn btn-outline-secondary">Button</button>
+                                                        <button class="btn btn-outline-secondary">Button</button>
+                                                        <button class="btn btn-outline-secondary">Button</button>
                                                     </div>
                                                     
                                                 </div>
@@ -1242,28 +1246,126 @@
                                                 <div class="body-section">
                                                     <div class="body-content">
                                                                                                 
-                                                        <div class="btn-group">
+
+                                                        <div class="btn-group btn-group-dropdown mr-10">
                                                             <button type="button" class="btn btn-primary font-weight-bold">1</button>
                                                             <button type="button" class="btn btn-success font-weight-bold">2</button>
                                                             <button type="button" class="btn btn-danger font-weight-bold">3</button>
                                                             <button type="button" class="btn btn-warning font-weight-bold">4</button>
                                                             <button type="button" class="btn btn-warning font-weight-bold">5</button>
                                                             <button type="button" class="btn btn-warning font-weight-bold">6</button>
-
-                                                            <div class="btn-group" role="group">
-                                                                <button id="btnGroupDrop1" type="button" class="btn btn-dark font-weight-bold dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                Dropdown
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-dark dropdown-trigger"> 
+                                                                    DROPDOWN<i class="fas fa-angle-down text-light ml-10"></i>
                                                                 </button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item" href="#">Dropdown link</a>
-                                                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                                                    <ul class="dropdown-menu btn-dropdown">
+                                                                        <li><a href="#">Dropdown link</a></li>
+                                                                        <li><a href="#">Dropdown link</a></li>
+    
+                                                                    </ul>
+                                                            
                                                                 </div>
+                                                            
+                                                                </div>
+                                                                <div class="btn-group btn-group-dropdown mr-10">
+                                                                    <button type="button" class="btn btn-outline-secondary font-weight-bold">1</button>
+                                                                    <button type="button" class="btn btn-outline-secondary font-weight-bold">2</button>
+                                                                    <button type="button" class="btn btn-outline-secondary font-weight-bold">3</button>
+                                                                    <button type="button" class="btn btn-outline-secondary font-weight-bold">4</button>
+                                                                    
+                                                                    <div class="dropdown outline">
+                                                                        <button class="btn btn-outline-secondary dropdown-trigger"> 
+                                                                            DROPDOWN <i class="fas fa-angle-down ml-10"></i>
+                                                                        </button>
+                                                                            <ul class="dropdown-menu btn-dropdown">
+                                                                                <li><a href="#">Dropdown link</a></li>
+                                                                                <li><a href="#">Dropdown link</a></li>
+            
+                                                                            </ul>
+                                                                    
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                         
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="card card-two">
+                                                <div class="heading">
+                                                    <h4>Buttons Toolbar</h4>
+                                                </div>
+                                                <div class="body">
+                                                    <h5 class="title">Combine sets of button groups into button toolbars for more complex components. Use utility classes to set the appropriate spacing and sizes.</h5>
+                    
+                                                    <div class="body-section">
+                                                        <div class="body-content flex">
+                                                                                                        
+                                                            <div class="btn-group ">
+                                                                <button class="btn btn-outline-secondary">1</button>
+                                                                <button class="btn btn-outline-secondary">2</button>
+                                                                <button class="btn btn-outline-secondary">3</button>
+                                                                <button class="btn btn-outline-secondary">4</button>
+                                                            </div>
+                                                            <div class="btn-group pl-5">
+                                                                <button class="btn btn-outline-secondary">5</button>
+                                                                <button class="btn btn-outline-secondary">6</button>
+                                                                <button class="btn btn-outline-secondary">7</button>
+                                                            </div>
+                                                            <div class="btn-group pl-5">
+                                                                <button class="btn btn-outline-secondary">8</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-p">Use sets of button groups with icons.</p>
+                                                    <div class="body-section">
+                                                        <div class="body-content">
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-file-alt"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fab fa-bitcoin"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-code-branch"></i></button>
+                                                            </div>
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-save"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-save"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fab fa-hackerrank"></i></button>
+                                                            </div>
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-cut"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-unlink"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-italic"></i></button>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-p">Mix input groups with button groups in your toolbars. Use utility classes to set the appropriate spacing and sizes.</p>
+                                                    <div class="body-section">
+                                                        <div class="body-content">
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-file-alt"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fab fa-bitcoin"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-code-branch"></i></button>
+                                                                <button class="btn btn-outline-secondary"><i class="fas fa-italic"></i></button>
+                                                            </div>
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary">@</button>
+                                                                <input class="group-input" type="text" placeholder="Input Group Example">
+                                                            </div>
+                                                            
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-primary"><i class="fas fa-file-alt"></i></button>
+                                                                <button class="btn btn-info"><i class="fab fa-bitcoin"></i></button>
+                                                                <button class="btn btn-warning"><i class="fas fa-code-branch"></i></button>
+                                                                <button class="btn btn-dark"><i class="fas fa-italic"></i></button>
+                                                            </div>
+                                                            <div class="btn-group mr-5">
+                                                                <button class="btn btn-outline-secondary">@</button>
+                                                                <input class="group-input" type="text" placeholder="Input Group Example">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

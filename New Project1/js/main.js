@@ -1,7 +1,8 @@
 $(document).ready(function(){
     trigger();
     dropdown();
-
+    activeButtonGroup();
+    activeBtnGroup();
 })
 
 
@@ -43,3 +44,17 @@ function dropdown(){
 
 }
 
+
+
+
+
+function activeButtonGroup(){
+    $('.btn-group .btn').on('click',function(){
+        
+        if($('.btn-group .btn').hasClass('active')){
+            $('.btn-group').find('.active').removeClass('active')
+        }
+
+        $(this).toggleClass('active')
+    })
+}

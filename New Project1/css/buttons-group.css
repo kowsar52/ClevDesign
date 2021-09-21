@@ -1,12 +1,16 @@
 .btn-group{
-    display: inline-flex;
-    margin: 10px;
-    
+    display:flex;
 }
 
 .btn-group .btn{
     margin: 0;
     border-radius: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.btn-group .btn i{
+    font-size: 16px;
+    padding: 2px 0;
 }
 .btn-group :first-child{
     border-top-left-radius: 5px;
@@ -49,26 +53,66 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
+.btn-group-vertical .btn:hover{
+    background-color: var(--heaven);
+    color: var(--lite);
+}
 .dropdown{
     position: relative;
 }
-.btn-dropdown a{
-    display: block;
-    padding: 6px 10px;
-}
-.btn-dropdown a:hover{
-    background: var(--heaven);
-}
 .btn-dropdown{
-    width: 120px;
-    align-items: center;
-    background-color: var(--pure) !important;
-    box-shadow: 0 0 3px rgb(85, 82, 82) !important;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    top: 50px;
+    left: -25px;
+    border-radius: 5px;
     position: absolute;
-    display: none;
+    background-color: var(--pure);
+    box-shadow: 0 0 5px var(--lite);
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.dropdown .btn-dropdown li{
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+.dropdown .btn-dropdown li:hover{
+    background-color: var(--heaven);
+    border-radius: 0;
+}
+.btn-dropdown.dropdown-show{
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+.btn-group-dropdown{
+    display: flex;
+}
+.btn-group-dropdown .btn{        
+    border-radius: 5px;
+    margin: 0;
+}
+.btn-group-dropdown .btn:not(:first-child){
+    border-radius: 0;
+}
+.btn-group-dropdown .btn:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-group-dropdown .dropdown .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.outline:last-child{
+    border-right: 1px solid rgb(173, 171, 171);
 }
 
-.btn-dropdown.dropdown-show{
-    display: block;
+.group-input{
+   border: 1px solid var(--lite); 
+   text-align: center;
+   outline:none;
 }
