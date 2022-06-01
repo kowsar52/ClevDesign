@@ -3,6 +3,7 @@
 /* ----- COLOR VARIABLES ----- */
 :root{
 	--skin-color:#FF0101;
+    --secondary-color:rgba(34, 33, 33, 0.5);
     --text-color-white:#FFFFFF;
     --bg-color:#2F2D2D;
 }
@@ -19,7 +20,7 @@
 }
 html {
     scroll-behavior: smooth;
-    font-size: 10px;
+    font-size: 14px;
   }
 body{
     line-height: 1.5;
@@ -80,10 +81,7 @@ p{
     color: #ffffff;
 }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-}
+
 /*===== Navigation Css START=====*/
 .nav{
     display: flex;
