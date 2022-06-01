@@ -2,7 +2,8 @@ $(document).ready(function(){
     trigger();
     dropdown();
     activeButtonGroup();
-    activeBtnGroup();
+    navs();
+    navDropdown();
 })
 
 
@@ -56,5 +57,30 @@ function activeButtonGroup(){
         }
 
         $(this).toggleClass('active')
+    })
+}
+
+function navs(){
+    $('.nav-list .nav-list-item').on('click',function(){
+        var target = $(this).data('target')
+        $('.AllTab').find('.active').removeClass('active')
+
+        $(this).addClass('active')
+        $(target).addClass('active')
+    })
+}
+
+function navDropdown(){
+    $('.dropdown-trigger').on('click',function(){
+
+
+        
+       if($('.nav-list').hasClass('active')){
+           $('.nav-list').find('.nav-dropdown.dropdown-show').removeClass('dropdown-show')
+       }
+        
+        $(this).hasClass('active')
+        $('.nav-list').find('.nav-dropdown').toggleClass('dropdown-show')
+        
     })
 }
