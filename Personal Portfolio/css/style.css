@@ -246,3 +246,16 @@ p{
 .btn-2 i{
     margin-left: 1rem;
 }
+
+.resume .experiences .experience h1{
+    font-size: 2.5rem;
+}
+.resume .experiences .experience h3{
+    font-size: 1.5rem;
+    color: var(--skin-color);
+}
+.resume .box{
+    background-color: var(--secondary-color);
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+}
