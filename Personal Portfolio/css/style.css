@@ -3,7 +3,7 @@
 /* ----- COLOR VARIABLES ----- */
 :root{
 	--skin-color:#FF0101;
-    --secondary-color:rgba(34, 33, 33, 0.5);
+    --secondary-color:#22212180;
     --text-color-white:#FFFFFF;
     --bg-color:#2F2D2D;
 }
@@ -20,7 +20,7 @@
 }
 html {
     scroll-behavior: smooth;
-    font-size: 14px;
+    font-size: 10px;
   }
 body{
     line-height: 1.5;
@@ -47,6 +47,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 p{
     color: var(--text-color-white);
+}
+.break-line{
+    width: 100%;
+    height: .2rem;
+    margin: 8rem 0;
+    background-color: var(--secondary-color);
+}
+.title{
+    margin-bottom: 2rem;
+}
+.title h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--skin-color);
+}
+.title h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--text-color-white);
+}
+.mid-title{
+    margin-bottom: 2rem;
+    float: center;
 }
 
 /* ~~~~~~~~~ SCROLLBAR START ~~~~~~~~~ */
@@ -83,6 +106,11 @@ p{
 
 
 /*===== Navigation Css START=====*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    transition: width .1s;
+  }
 .nav{
     display: flex;
     justify-content: space-between;
@@ -90,7 +118,7 @@ p{
     margin-top: 2.5rem;
 }
 .nav .logo a{
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--skin-color);
     
 }
@@ -98,11 +126,12 @@ p{
     display: inline-block;
     padding-left: 1rem;
 }
-.nav .menu ul li:hover{
-
+.nav .menu ul li a{
+    font-size: 2rem;
 }
 .nav .btn{
     background-color: var(--skin-color);
+    font-size: 1.6rem;
     padding: .5rem 1rem;
     border-radius: .3rem;
 }
@@ -112,25 +141,88 @@ p{
 .hero-section{
     margin-top: 7rem;
 }
-.hero-section .leftside{
-    width: 50%;
+.hero-section .leftside h3{
+    font-size: 2rem;
 }
 .hero-section .leftside h3 span{
     color: var(--skin-color);
 }
 .hero-section .leftside h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 .hero-section .leftside h4{
     font-weight: 400;
+    font-size: 2rem;
 }
 .hero-section .leftside p{
+    font-size: 1.4rem;
     margin: 2rem 0 3rem 0;
-    inline-size: 30rem; 
    overflow: hidden;
 }
-.hero-section .leftside .social-links .links
-.hero-section .rightside{
-    width: 50%;
+.hero-section .leftside .social-links h3{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.hero-section .leftside .social-links .links i{
+    background-color: var(--secondary-color);
+    padding: .8rem 1rem;
+    color: var(--text-color-white);
+    font-size: 2rem;
+    border-radius: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 5rem;
+    margin-top: .5rem;
+}
+.hero-section .leftside .years h1{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.hero-section .leftside .years h4{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.hero-section .rightside .image{
+    width: 38rem;
+    height: 40rem;
+    background: var(--secondary-color);
+    margin-top: 10rem;
+    position: relative;
+    float: right;
+}
+.hero-section .rightside .image img {
+    position: absolute;
+    width: 60rem;
+    height: auto;
+    bottom: 0;
+    right: -10rem;
 }
 /*===== HERO SECTION END =====*/ 
+
+
+/*===== SERVICE SECTION START =====*/ 
+.service-section .services{
+    box-shadow: 0 0 20px 0 #2f2d2d;
+}
+
+.service-section .services .box {
+    border-radius: .5rem;
+    box-shadow: inset 0 0 40px 0 #fbfbfb2e;
+    background-color: var(--secondary-color);
+}
+.service-section .services .box .info{
+    padding: 10rem 7rem; 
+}
+.service-section .services .box .info i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--skin-color);
+}
+.service-section .services .box .info h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.service-section .services .box .info p{
+    font-size: 1.4rem;
+}
+/*===== SERVICE SECTION END =====*/ 
