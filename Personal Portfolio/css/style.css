@@ -183,8 +183,9 @@ p{
 }
 
 .hero-section .rightside .image{
-    width: 38rem;
+    width: 35rem;
     height: 40rem;
+    margin-right: 5rem;
     background: var(--secondary-color);
     margin-top: 10rem;
     position: relative;
@@ -226,3 +227,22 @@ p{
     font-size: 1.4rem;
 }
 /*===== SERVICE SECTION END =====*/ 
+
+.award-section .gallery .gallery-item img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border: .5rem solid var(--text-color-white);
+    border-radius: .2rem;
+}
+.btn-2{
+    margin-top: 5rem;
+}
+.btn-2 a{
+    background-color: var(--secondary-color);
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+}
+.btn-2 i{
+    margin-left: 1rem;
+}
