@@ -23,6 +23,7 @@ html {
     font-size: 10px;
   }
 body{
+    font-size: 1.4rem;
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -228,9 +229,10 @@ p{
 }
 /*===== SERVICE SECTION END =====*/ 
 
+/* RESUME SECTION START */
 .award-section .gallery .gallery-item img{
     width: 100%;
-    height: 20rem;
+    height: 35rem;
     object-fit: cover;
     border: .5rem solid var(--text-color-white);
     border-radius: .2rem;
@@ -254,8 +256,105 @@ p{
     font-size: 1.5rem;
     color: var(--skin-color);
 }
-.resume .box{
-    background-color: var(--secondary-color);
-    padding: 3rem 2rem;
-    border-radius: .5rem;
+.resume .box .left{
+    padding-left: 5rem;
 }
+.resume .box .line{
+    border-left: .5rem solid var(--secondary-color);
+}
+.resume .box .outside-effect{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.315);
+}
+.resume .box .item{
+    background-color: var(--secondary-color);
+    padding: 3rem 4rem;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    box-shadow: inset 0 0 4rem 0 rgba(255, 255, 255, 0.192);
+    position: relative;
+}
+.resume .box .item::before{
+    content: "";
+    position: absolute;
+    height: .5rem;
+    width: 5rem;
+    top: 51%;
+    left: -5rem;
+    background-color: var(--secondary-color);
+}
+.resume .box .item .circle{
+    position: absolute;
+    height:1rem;
+    width: 1rem;
+    border-radius: 100%;
+    top: 50%;
+    left: -5.7rem;
+    background-color: var(--secondary-color);
+}
+.resume .box .item h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+.resume .box .item h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.resume .box .item p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+/* RESUME SECTION END */
+
+/* TESTIMONIAL SECTION START */
+.testimonial .next-prev i{
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    color: var(--text-color-white);
+    background-color: var(--secondary-color);
+    padding: 2rem 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.151);
+}
+.testimonial .owl-carousel .box .inside-effect{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.205);
+}
+
+.testimonial .owl-carousel .box{
+    background-color: var(--secondary-color);
+    padding: 5rem;
+    border-radius: .5rem;
+    box-shadow: inset 0 0 1rem 0 rgba(255, 255, 255, 0.171);
+}
+.testimonial .owl-carousel .box .head .comma{
+    color: var(--skin-color);
+    font-size: 3rem;
+}
+.testimonial .owl-carousel .box .head .star{
+    color: var(--skin-color);
+    font-size: 1.4rem;
+}
+.testimonial .owl-carousel .box h3{
+    margin: 1.5rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.testimonial .owl-carousel .box p{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.testimonial .scroll{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.testimonial .scroll .dot{
+    font-size: 1.4rem;
+    padding-left: .5rem;
+}
+.testimonial .scroll .dot.active{
+    color: var(--skin-color);
+}
+
+/* TESTIMONIAL SECTION END */

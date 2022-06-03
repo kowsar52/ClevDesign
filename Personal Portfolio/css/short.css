@@ -2,6 +2,16 @@
     display: flex;
     justify-content: center;
 }
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
 .text-center{
     text-align: center !important;
 }
