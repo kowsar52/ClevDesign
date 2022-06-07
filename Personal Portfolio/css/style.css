@@ -308,13 +308,14 @@ p{
 /* RESUME SECTION END */
 
 /* TESTIMONIAL SECTION START */
-.testimonial .next-prev i{
+.testimonial .next-prev button{
     margin-right: 1rem;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--text-color-white);
     background-color: var(--secondary-color);
-    padding: 2rem 2.5rem;
+    padding: 1rem 2.5rem;
     border-radius: .5rem;
+    cursor: pointer;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.151);
 }
 .testimonial .owl-carousel .box .inside-effect{
@@ -322,6 +323,7 @@ p{
 }
 
 .testimonial .owl-carousel .box{
+    cursor: pointer;
     background-color: var(--secondary-color);
     padding: 5rem;
     border-radius: .5rem;
@@ -358,3 +360,58 @@ p{
 }
 
 /* TESTIMONIAL SECTION END */
+
+/* CUSTOMER SECTION START */
+.customer .outside-effect{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.324);
+}
+.customer .box{
+    border-radius: .5rem;
+    box-shadow: inset 0 0 1rem 0 rgba(250, 250, 250, 0.283);
+}
+.customer .box .logo{
+    padding: 3rem 3.5rem;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 0.5rem;
+}
+.customer .box .logo i{
+    margin-right: 0.5rem;
+    color: var(--text-color-white);
+    font-size: 2rem;
+}
+/* CUSTOMER SECTION END */
+
+.contact .outside-effect{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.324);
+}
+.contact .box{
+    border-radius: .5rem;
+    box-shadow: inset 0 0 1rem 0 rgba(250, 250, 250, 0.283);
+}
+.contact .box .text{
+    padding: 3rem 3.5rem;
+    background: var(--secondary-color);
+    align-items: center;
+    justify-content:center;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.contact .box .text:not(last-child){
+    margin-bottom: 3rem;
+}
+.contact .box .text i{
+    color: var(--skin-color);
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+.contact .background: var(--secondary-color);
+padding: 1rem 1.5rem;
+margin-bottom: 2rem;
+}input{
+    background: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
