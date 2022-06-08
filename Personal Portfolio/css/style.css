@@ -455,9 +455,11 @@ footer .footer-content .social-links .links i{
     border-radius: .5rem;
     margin: 1rem;
 }
-footer .footer-content p{
-    font-size:1.4rem;
-}
+footer .footer-content h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
 
 /* FOOTER SECTION END */
 .d-none{
