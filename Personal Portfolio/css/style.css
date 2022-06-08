@@ -414,7 +414,6 @@ p{
     margin: 3rem;
 }
 .contact input{
-    width: 100%;
     background-color: var(--secondary-color);
     padding:1.5rem 2rem;
     color: var(--text-color-white);
@@ -424,12 +423,14 @@ p{
     background-color: var(--secondary-color);
     color: var(--text-color-white);
     resize: none;
+    height: 20rem;
+    padding: 2rem;
 }
 .contact button{
     padding:1rem 1.5rem;
     background-color: var(--secondary-color);
     color: #FFFFFF;
-    margin: 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 
