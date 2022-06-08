@@ -17,14 +17,14 @@
 
     <!--=====||JQUERY LINKING||=====-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <nav class="nav">
                 <div class="logo">
-                    <a href="#">REX</a>
-                    
+                    <a href="#">REX</a>   
                 </div>
                 <div class="menu d-sm-none">
                     <ul>
@@ -38,30 +38,26 @@
                 <div class="btn d-sm-none">
                     <a href="javascript:;">Download CV</a>
                 </div>
-                <button class="d-sm-block open btn"><i class="fa-solid fa-bars "></i></button>
+                <button class="d-md-none open btn"><i class="fa-solid fa-bars "></i></button>
             </nav>
 
-            <nav class="mobile-nav">
-                <div class="logo">
-                    <a href="#">REX</a>
-                    
-                </div>
-                <div class="menu ">
+           
+                <div class="mobile-menu d-md-none">
+                    <div class="logo">
+                        <a href="#">REX</a>   
+                    </div>
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">SERVICES</a></li>
                         <li><a href="#">PORTFOLIO</a></li>
                         <li><a href="#">RESUME</a></li>
                         <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div class="btn">
+                        <div class="submit-btn d-md-none">
                     <a href="javascript:;">Download CV</a>
                 </div>
-                <button class="d-sm-block close btn"><i class="fa-solid fa-bars "></i></button>
-
-
-            </nav>
+                    </ul>
+                    <button class="d-sm-block close btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>          
       
             <div class="hero-section row">
                 <div class="leftside col-12 col-md-6">

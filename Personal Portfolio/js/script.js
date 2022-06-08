@@ -25,6 +25,9 @@ $(document).ready(function() {
     })
 });
 
-$(document).ready(function(){
-    $('.open').show("slide", { direction: "left" }, 1000);
-});
+$(".open").click(function(){
+    $(".mobile-menu").show("slide",{direction: "left"},500)
+})
+$(".close").click(function(){
+    $(".mobile-menu").hide("slide",{direction: "left"},500)
+})

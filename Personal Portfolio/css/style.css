@@ -463,3 +463,6 @@ footer .footer-content p{
 .d-none{
     display: none;
 }
+button i{
+    color: #ffffff;
+}

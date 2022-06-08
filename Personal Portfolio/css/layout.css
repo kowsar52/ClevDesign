@@ -47,40 +47,28 @@
   @media (max-width:640px) and (min-width:100px){
     .container{
       width: 95%;
+      margin: 0 auto;
     }
-    .d-sm-none{
-      display: none !important;
-  }
-  .d-sm-block{
-      display: block !important;
-  }
-  .mobile-nav .logo{
-    display: flex !important;
-    justify-content: space-between !important;
-  }
-  .mobile-nav{
-    background: black;
+
+  .mobile-menu{
+    background: rgb(38, 37, 37);
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0;
     width: 100%;
     text-align: center;
     z-index: 999;
+    display: none;
   }
-  .mobile-nav .logo {
-    position: fixed;
-    top: 1rem;
-    left: 50%;
+  .mobile-menu .logo {
+    margin:2.5rem;
   }
-  .mobile-nav .logo a{
-    color: var(--skin-color);
-    font-size:2.5rem;
-
-  }
-  .mobile-nav 
-.menu-logo a{
-  font-size:3rem;
+.mobile-menu .logo a{
+  font-size:2rem;
   color: var(--skin-color);
 }
 .mobile-menu ul li{
@@ -94,13 +82,27 @@
   background: var(--skin-color);
   border-radius: .5rem;
 }
-  button{
-    background: none;
+.mobile-menu .submit-btn{
+  margin-top: 2.5rem;
+}
+.mobile-menu .submit-btn a{
+  background: var(--skin-color);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+}
+.mobile-menu button{
+  background: none;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
   }
-  .btn{
+  .mobile-menu .btn i{
     padding:1rem;
+    font-size: 2rem;
     color: white;
-    background:var(--secondary-color);
+    background:var(--skin-color);
+    border-radius: .5rem;
   }
   .close{
     position:absolute;
@@ -111,6 +113,12 @@
   .resume .experiences{
     grid-gap:0;
   }
+  .d-sm-none{
+    display: none !important;
+}
+.d-sm-block{
+    display: block !important;
+}
   }
 /* mobile reponsive end */
 
@@ -119,6 +127,12 @@
     .container {
       width: 768px;
     }
+    .d-md-none{
+      display: none !important;
+  }
+  .d-md-block{
+      display: block !important;
+  }
     .col-md-1{
       grid-column: span 1;
     }
