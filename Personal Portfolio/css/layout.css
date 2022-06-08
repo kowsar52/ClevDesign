@@ -114,12 +114,64 @@
     grid-gap:0;
   }
   .d-sm-none{
-    display: none !important;
-}
-.d-sm-block{
-    display: block !important;
-}
+      display: none !important;
   }
+  .d-sm-block{
+      display: block !important;
+  }
+
+  .hero-section .rightside .image{
+    display: none;
+  }
+  .break-line{
+    margin: 4rem 0;
+  }
+  .years{
+    display: block;
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .title h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--skin-color);
+  }
+  .title h3 {
+    font-size: 1.3rem;
+  }
+  .title h1 {
+    font-size: 2rem;
+  }
+  .service-section .services .box .info {
+    padding: 5rem;
+  }
+  .resume .box .left {
+    padding-left: 1rem;
+  }
+  .resume .experiences .experience h1 {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .resume .experiences .experience h3 {
+    margin-left: 10px;
+  }
+  .testimonial .owl-carousel .box {
+    margin-top: 1rem;
+  }
+  .contact .input {
+    margin: 1rem 2rem 0 2rem;
+  }
+  .footer .footer-content .social-links .links i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  footer .footer-content p {
+    font-size: 1.2rem;
+  }
+}
 /* mobile reponsive end */
 
   /* tablet reponsive start  */

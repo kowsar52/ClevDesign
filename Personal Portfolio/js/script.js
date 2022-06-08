@@ -27,7 +27,9 @@ $(document).ready(function() {
 
 $(".open").click(function(){
     $(".mobile-menu").show("slide",{direction: "left"},500)
+    $("body").css('overflow','hidden')
 })
 $(".close").click(function(){
     $(".mobile-menu").hide("slide",{direction: "left"},500)
+    $("body").css('overflow','auto')
 })
