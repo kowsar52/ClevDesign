@@ -7,9 +7,8 @@
     <title>WEBSITE TITLE</title>
 
     <!--=====||CSS LINKING||=====-->
-
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/short.css">
     <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -25,8 +24,29 @@
             <nav class="nav">
                 <div class="logo">
                     <a href="#">REX</a>
+                    
                 </div>
                 <div class="menu d-sm-none">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">RESUME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="btn d-sm-none">
+                    <a href="javascript:;">Download CV</a>
+                </div>
+                <button class="d-sm-block open btn"><i class="fa-solid fa-bars "></i></button>
+            </nav>
+
+            <nav class="mobile-nav">
+                <div class="logo">
+                    <a href="#">REX</a>
+                    
+                </div>
+                <div class="menu ">
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">SERVICES</a></li>
@@ -38,8 +58,11 @@
                 <div class="btn">
                     <a href="javascript:;">Download CV</a>
                 </div>
-            </nav>
+                <button class="d-sm-block close btn"><i class="fa-solid fa-bars "></i></button>
 
+
+            </nav>
+      
             <div class="hero-section row">
                 <div class="leftside col-12 col-md-6">
                     <h3 class="mb-15">Hello, <span>I’m</span></h3>
@@ -203,7 +226,7 @@
                 <h1>My Resume</h1>
             </div>
 
-            <div class="experiences row" style="grid-gap: 5rem;">
+            <div class="experiences row">
                
                 <div class="box col-12 col-md-6">
                     <div class="experience">

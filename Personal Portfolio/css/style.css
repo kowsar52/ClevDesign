@@ -122,6 +122,8 @@ p{
     font-size: 3rem;
     color: var(--skin-color);
     
+}.nav .logo button{
+    display:none;
 }
 .nav .menu ul li{
     display: inline-block;
@@ -136,6 +138,9 @@ p{
     padding: .5rem 1rem;
     border-radius: .3rem;
 }
+/* .mobile-nav{
+    display: none;
+} */
 /*===== Navigation Css END=====*/
 
 /*===== HERO SECTION START =====*/ 
@@ -248,7 +253,9 @@ p{
 .btn-2 i{
     margin-left: 1rem;
 }
-
+.resume .row{
+    grid-gap: 5rem;
+}
 .resume .experiences .experience h1{
     font-size: 2.5rem;
 }
@@ -414,6 +421,7 @@ p{
     margin: 3rem;
 }
 .contact input{
+    width: 100%;
     background-color: var(--secondary-color);
     padding:1.5rem 2rem;
     color: var(--text-color-white);
@@ -452,3 +460,6 @@ footer .footer-content p{
 }
 
 /* FOOTER SECTION END */
+.d-none{
+    display: none;
+}

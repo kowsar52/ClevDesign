@@ -24,3 +24,7 @@ $(document).ready(function() {
         }
     })
 });
+
+$(document).ready(function(){
+    $('.open').show("slide", { direction: "left" }, 1000);
+});

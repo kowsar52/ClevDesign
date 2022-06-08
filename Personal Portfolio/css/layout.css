@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     transition: width .1s;
   }
@@ -45,9 +45,72 @@
 }
   /* mobile reponsive start  */
   @media (max-width:640px) and (min-width:100px){
+    .container{
+      width: 95%;
+    }
     .d-sm-none{
       display: none !important;
-    }
+  }
+  .d-sm-block{
+      display: block !important;
+  }
+  .mobile-nav .logo{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .mobile-nav{
+    background: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+  .mobile-nav .logo {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+  }
+  .mobile-nav .logo a{
+    color: var(--skin-color);
+    font-size:2.5rem;
+
+  }
+  .mobile-nav 
+.menu-logo a{
+  font-size:3rem;
+  color: var(--skin-color);
+}
+.mobile-menu ul li{
+  margin: 1rem 0;
+}
+.mobile-menu ul button{
+  margin-top: 2rem;
+}
+.mobile-menu ul .menu-btn{
+  padding: 1rem 1.5rem;
+  background: var(--skin-color);
+  border-radius: .5rem;
+}
+  button{
+    background: none;
+  }
+  .btn{
+    padding:1rem;
+    color: white;
+    background:var(--secondary-color);
+  }
+  .close{
+    position:absolute;
+    bottom: 2rem;
+    left: 50%;
+
+  }
+  .resume .experiences{
+    grid-gap:0;
+  }
   }
 /* mobile reponsive end */
 
