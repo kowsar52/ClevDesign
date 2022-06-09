@@ -124,9 +124,9 @@ header .right{
     display: flex;
     align-items: center;
 }
-header .left .logo h1{
+header .left .logo i{
     color: var(--green);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 header .left .menu ul{
     display: flex;
@@ -247,7 +247,7 @@ header .right .icons .log-in-box{
     width: 30rem;
     background: var(--bg-white);
     min-height: 30rem;
-    right: 0;
+    right: -10rem;
     top: 7rem;
     border: .2rem solid var(--lite-black);
     border-top: .2rem solid var(--primary);
@@ -318,5 +318,14 @@ header .right .icons .log-in:hover .log-in-box{
     color: var(--primary);
 }
 /* log-in box end  */
+
+/* for mobile devices start */
+.mobile-menu{
+    display: none;
+}
+.mobile-contact{
+    display: none;
+}
+/* for mobile devices end */
 
 /* main navigation css end */

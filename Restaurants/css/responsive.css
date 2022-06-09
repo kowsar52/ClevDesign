@@ -1,231 +1,369 @@
-.container{
+.container {
     width: 90%;
     margin: 0 auto;
 }
 
-.log-in-container{
+.log-in-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.row{
+.row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-/* default grid cols */
-.col-1{
-    grid-column: span 1;
-}
-.col-2{
-    grid-column: span 2;
-}
-.col-3{
-    grid-column: span 3;
-}
-.col-4{
-    grid-column: span 4;
-}
-.col-5{
-    grid-column: span 5;
-}
-.col-6{
-    grid-column: span 6;
-}
-.col-7{
-    grid-column: span 7;
-}
-.col-8{
-    grid-column: span 8;
-}
-.col-9{
-    grid-column: span 9;
-}
-.col-10{
-    grid-column: span 10;
-}
-.col-11{
-    grid-column: span 11;
-}
-.col-12{
-    grid-column: span 12;
-}
 
-/* for sm devices */
-@media (min-width: 460px) and (max-width: 680px){
-     /* responsive css start */
-     /* responsive css end */
+/* default devices */
+@media (max-width: 460px){
+    .d-block {
+        display: block !important;
+    }
+    .d-none {
+        display: none !important;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu i{
+        font-size: 2rem;
+        color: var(--secondary);
+    }
+    .mobile-contact{
+        display: block;
+    }
+    header .nav-bg {
+        height: 5rem;
+        top: 0;
+    }
+    .nav-bg .left{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: -1.2rem;
+    }
+    header .left .menu{
+    position: absolute;
+    top: 0;
+    left: -100px;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    }
+    header .left .menu ul {
+        display: block;
+    }
 
-     /* for sm devices cols */
-    .col-sm-1{
+
+    .col-1 {
         grid-column: span 1;
     }
-    .col-sm-2{
+    
+    .col-2 {
         grid-column: span 2;
     }
-    .col-sm-3{
+    
+    .col-3 {
         grid-column: span 3;
     }
-    .col-sm-4{
+    
+    .col-4 {
         grid-column: span 4;
     }
-    .col-sm-5{
+    
+    .col-5 {
         grid-column: span 5;
     }
-    .col-sm-6{
+    
+    .col-6 {
         grid-column: span 6;
     }
-    .col-sm-7{
+    
+    .col-7 {
         grid-column: span 7;
     }
-    .col-sm-8{
+    
+    .col-8 {
         grid-column: span 8;
     }
-    .col-sm-9{
+    
+    .col-9 {
         grid-column: span 9;
     }
-    .col-sm-10{
+    
+    .col-10 {
         grid-column: span 10;
     }
-    .col-sm-11{
+    
+    .col-11 {
         grid-column: span 11;
     }
-    .col-sm-12{
+    
+    .col-12 {
         grid-column: span 12;
     }
 }
+
+/* for sm devices */
+@media (min-width: 460px) and (max-width: 680px) {
+
+    /* responsive css start */
+    /* for show-hide css star */
+    .d-sm-block {
+        display: block !important;
+    }
+
+    .d-sm-none {
+        display: none !important;
+    }
+    /* for show-hide css end */
+
+    /* responsive css end */
+
+    /* for sm devices cols */
+    .col-sm-1 {
+        grid-column: span 1;
+    }
+
+    .col-sm-2 {
+        grid-column: span 2;
+    }
+
+    .col-sm-3 {
+        grid-column: span 3;
+    }
+
+    .col-sm-4 {
+        grid-column: span 4;
+    }
+
+    .col-sm-5 {
+        grid-column: span 5;
+    }
+
+    .col-sm-6 {
+        grid-column: span 6;
+    }
+
+    .col-sm-7 {
+        grid-column: span 7;
+    }
+
+    .col-sm-8 {
+        grid-column: span 8;
+    }
+
+    .col-sm-9 {
+        grid-column: span 9;
+    }
+
+    .col-sm-10 {
+        grid-column: span 10;
+    }
+
+    .col-sm-11 {
+        grid-column: span 11;
+    }
+
+    .col-sm-12 {
+        grid-column: span 12;
+    }
+}
+
 /* for sm devices end */
 
 /* for md devices start */
-@media (min-width: 680px) and (max-width: 900px){
+@media (min-width: 680px) and (max-width: 900px) {
     /* responsive css start */
+    /* for show-hide css star */
+    .d-md-block{
+        display: block !important;
+    }
+    .d-md-none{
+        display: none !important;
+    }
+    /* for show-hide css end */
+
     /* responsive css end */
 
     /* for md devices cols */
-   .col-md-1{
-       grid-column: span 1;
-   }
-   .col-md-2{
-       grid-column: span 2;
-   }
-   .col-md-3{
-       grid-column: span 3;
-   }
-   .col-md-4{
-       grid-column: span 4;
-   }
-   .col-md-5{
-       grid-column: span 5;
-   }
-   .col-md-6{
-       grid-column: span 6;
-   }
-   .col-md-7{
-       grid-column: span 7;
-   }
-   .col-md-8{
-       grid-column: span 8;
-   }
-   .col-md-9{
-       grid-column: span 9;
-   }
-   .col-md-10{
-       grid-column: span 10;
-   }
-   .col-md-11{
-       grid-column: span 11;
-   }
-   .col-md-12{
-       grid-column: span 12;
-   }
+    .col-md-1 {
+        grid-column: span 1;
+    }
+
+    .col-md-2 {
+        grid-column: span 2;
+    }
+
+    .col-md-3 {
+        grid-column: span 3;
+    }
+
+    .col-md-4 {
+        grid-column: span 4;
+    }
+
+    .col-md-5 {
+        grid-column: span 5;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+    }
+
+    .col-md-7 {
+        grid-column: span 7;
+    }
+
+    .col-md-8 {
+        grid-column: span 8;
+    }
+
+    .col-md-9 {
+        grid-column: span 9;
+    }
+
+    .col-md-10 {
+        grid-column: span 10;
+    }
+
+    .col-md-11 {
+        grid-column: span 11;
+    }
+
+    .col-md-12 {
+        grid-column: span 12;
+    }
 }
+
 /* for md devices end */
 
 /* for lg devices end */
-@media (min-width: 900px) and (max-width: 1340px){
+@media (min-width: 900px) and (max-width: 1340px) {
     /* responsive css start */
+    /* for show-hide css star */
+    .d-lg-block{
+        display: block !important;
+    }
+    .d-lg-none{
+        display: none !important;
+    }
+    /* for show-hide css end */
+
     /* responsive css end */
 
     /* for lg devices cols */
-   .col-lg-1{
-       grid-column: span 1;
-   }
-   .col-lg-2{
-       grid-column: span 2;
-   }
-   .col-lg-3{
-       grid-column: span 3;
-   }
-   .col-lg-4{
-       grid-column: span 4;
-   }
-   .col-lg-5{
-       grid-column: span 5;
-   }
-   .col-lg-6{
-       grid-column: span 6;
-   }
-   .col-lg-7{
-       grid-column: span 7;
-   }
-   .col-lg-8{
-       grid-column: span 8;
-   }
-   .col-lg-9{
-       grid-column: span 9;
-   }
-   .col-lg-10{
-       grid-column: span 10;
-   }
-   .col-lg-11{
-       grid-column: span 11;
-   }
-   .col-lg-12{
-       grid-column: span 12;
-   }
+    .col-lg-1 {
+        grid-column: span 1;
+    }
+
+    .col-lg-2 {
+        grid-column: span 2;
+    }
+
+    .col-lg-3 {
+        grid-column: span 3;
+    }
+
+    .col-lg-4 {
+        grid-column: span 4;
+    }
+
+    .col-lg-5 {
+        grid-column: span 5;
+    }
+
+    .col-lg-6 {
+        grid-column: span 6;
+    }
+
+    .col-lg-7 {
+        grid-column: span 7;
+    }
+
+    .col-lg-8 {
+        grid-column: span 8;
+    }
+
+    .col-lg-9 {
+        grid-column: span 9;
+    }
+
+    .col-lg-10 {
+        grid-column: span 10;
+    }
+
+    .col-lg-11 {
+        grid-column: span 11;
+    }
+
+    .col-lg-12 {
+        grid-column: span 12;
+    }
 }
+
 /* for lg devices end */
 
 /* for xl devices end */
-@media (min-width: 1340px){
+@media (min-width: 1340px) {
     /* responsive css start */
+    /* for show-hide css star */
+    .d-xl-block{
+        display: block !important;
+    }
+    .d-xl-none{
+        display: none !important;
+    }
+    /* for show-hide css end */
+
     /* responsive css end */
 
     /* for xl devices cols */
-   .col-xl-1{
-       grid-column: span 1;
-   }
-   .col-xl-2{
-       grid-column: span 2;
-   }
-   .col-xl-3{
-       grid-column: span 3;
-   }
-   .col-xl-4{
-       grid-column: span 4;
-   }
-   .col-xl-5{
-       grid-column: span 5;
-   }
-   .col-xl-6{
-       grid-column: span 6;
-   }
-   .col-xl-7{
-       grid-column: span 7;
-   }
-   .col-xl-8{
-       grid-column: span 8;
-   }
-   .col-xl-9{
-       grid-column: span 9;
-   }
-   .col-xl-10{
-       grid-column: span 10;
-   }
-   .col-xl-11{
-       grid-column: span 11;
-   }
-   .col-xl-12{
-       grid-column: span 12;
-   }
+    .col-xl-1 {
+        grid-column: span 1;
+    }
+
+    .col-xl-2 {
+        grid-column: span 2;
+    }
+
+    .col-xl-3 {
+        grid-column: span 3;
+    }
+
+    .col-xl-4 {
+        grid-column: span 4;
+    }
+
+    .col-xl-5 {
+        grid-column: span 5;
+    }
+
+    .col-xl-6 {
+        grid-column: span 6;
+    }
+
+    .col-xl-7 {
+        grid-column: span 7;
+    }
+
+    .col-xl-8 {
+        grid-column: span 8;
+    }
+
+    .col-xl-9 {
+        grid-column: span 9;
+    }
+
+    .col-xl-10 {
+        grid-column: span 10;
+    }
+
+    .col-xl-11 {
+        grid-column: span 11;
+    }
+
+    .col-xl-12 {
+        grid-column: span 12;
+    }
 }
+
 /* for xl devices end */

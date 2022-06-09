@@ -1,11 +1,3 @@
-/* for show-hide css star */
-.d-block{
-    display: block !important;
-}
-.d-none{
-    display: none !important;
-}
-/* for show-hide css end */
 
 .flex {
     display: flex !important;

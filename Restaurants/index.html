@@ -21,7 +21,7 @@
 <body>
     <header>
         <!-- navigation top start -->
-        <div class="top-section"> <!--shorts css file-->
+        <div class="top-section d-none"> <!--shorts css file-->
 
             <div class="container  justify-between p-10"> <!--in responsive css file-->
                 <div class="info flex">
@@ -51,9 +51,19 @@
         <div class="nav-bg absolute"> <!--in shorts css file-->
             <div class="container justify-between m-t-20">
                 <div class="left">
+
+                    <button class="mobile-menu"> <!-- for mobile only -->
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
                     <div class="logo">
-                        <a href="#"><h1>Yummy!</h1></a>
+                        <a href="#"><i class="fa-solid fa-hotdog"></i></a>
                     </div>
+
+                    <a href="#" class="mobile-contact"> <!-- for mobile only -->
+                        <i class="fa-solid fa-phone-flip"></i>
+                    </a>
+
                     <div class="menu m-l-30"> <!--in shorts css file-->
                         <ul>
                             <li class="active">
@@ -109,8 +119,9 @@
                         </ul>
                     </div>
                 </div>
+
                 
-                <div class="right">
+                <div class="right  d-none">
                     <div class="contact">
                         <i class="fa-solid fa-bicycle font-50 green m-r-15"></i> <!--in shorts css file-->
                         <div class="flex-column line-h-12"> 
@@ -162,7 +173,12 @@
         
         <!-- main navigation end -->
 
+        <div class="container">
+            
+        </div>
+
     </header>
+
 
 
 
