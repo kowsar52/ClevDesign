@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+.log-in-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
 .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);

@@ -121,6 +121,7 @@ header .left .logo h1{
 header .left .menu ul{
     display: flex;
     align-items: center;
+    margin-top: 2rem;
 }
 header .left .menu ul li{
     margin-left: 3rem;
@@ -146,23 +147,27 @@ header .left .menu ul li i{
     transition: all .3s ease-in-out;
 }
 /* for submenu start */
-.menu li {
+.menu li{
     position: relative;
+    border-bottom: 2rem solid transparent;
 }
 .menu li ul.sub-menu{
     position: absolute;
     width: 20rem;
     padding: 2rem 0;
+    display: block;
     background: var(--bg-white);
     border-radius: .5rem;
     box-shadow: 0 0 1rem 0 rgba(70, 70, 70, 0.146);
     z-index: 999;
+    margin-top: 2rem;
     display: none;
 }
 .menu li ul.sub-menu li{
     margin: 0;
     width: 20rem;
     padding: 1rem 0 1rem 2rem;
+    border-bottom: 0;
     transition: all .3s ease-in-out;
 }
 .menu li ul.sub-menu li a{
@@ -220,4 +225,11 @@ header .right .icons span{
     padding: .1rem .6rem;
     border-radius: 1rem;
 }
+
+/* log-in box start */
+header .right .icons .log-in-box{
+    width: 100rem;
+}
+/* log-in box end  */
+
 /* main navigation css end */
