@@ -1,4 +1,5 @@
 /* custom font linking */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: "Gilroy-ExtraBold";
     src: url(../font-family/Gilroy-Font/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf);
@@ -35,9 +36,13 @@ html{
 button{
     background: none;
 }
+*:not(i){
+    font-family: 'Hind', sans-serif;
+}
 body{
     line-height: 1.5;
-    font-family: "Gilroy-ExtraBold";
+    font-size: 1.6rem;
+    height: 1000px;
 }
 a{
     text-decoration: none;
@@ -107,8 +112,13 @@ header .nav-bg{
     background: var(--bg-white);
     width: 100%;
     height: 12rem;
-    top: 38px;
+    top: 40px;
 }
+/* .sticky{
+    position: fixed;
+    height: 8rem !important;
+    margin-top: -4rem;
+} */
 header .left,
 header .right{
     display: flex;
@@ -132,19 +142,20 @@ header .left .menu ul li{
 li.active{
     color: var(--hover-color);
 }
+/* for li active */
 
 header .left .menu ul li:hover a{
     color: var(--hover-color);
 }
 header .left .menu ul li a{
     font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 }
 header .left .menu ul li i{
     font-size: 1.2rem;
     margin-left: 1rem;
-    transition: all .3s ease-in-out;
 }
 /* for submenu start */
 .menu li{
@@ -205,20 +216,21 @@ header .right .icons ul li{
     position: relative;
     cursor: pointer;
 }
-header .right .icons ul li i{
+header .right .icons ul li .menu-icon{
     font-size: 1.5rem;
     padding: 1.5rem;
     border: 1px solid var(--lite-black);
     border-radius: 100%;
     transition: all .3s ease-in-out;
 }
-header .right .icons ul li:hover i{
+header .right .icons ul li:hover .menu-icon{
     background-color: var(--hover-color);
     border: 1px solid var(--hover-color);
     border-radius: 100%;
 }
 header .right .icons span{
     position: absolute;
+    font-size: 1rem;
     top: 20%;
     left: 60%;
     background-color: var(--primary);
@@ -227,8 +239,83 @@ header .right .icons span{
 }
 
 /* log-in box start */
+header .right .icons .log-in{
+    margin-top: 2rem;
+    border-bottom: 2rem solid transparent;
+}
 header .right .icons .log-in-box{
-    width: 100rem;
+    width: 30rem;
+    background: var(--bg-white);
+    min-height: 30rem;
+    right: 0;
+    top: 7rem;
+    border: .2rem solid var(--lite-black);
+    border-top: .2rem solid var(--primary);
+    box-shadow: 0 0 1rem 0 rgba(70, 70, 70, 0.146);
+    display: none;
+}
+header .right .icons .log-in:hover .log-in-box{
+    display: block;
+}
+.icons .log-in-box .head{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+.icons .log-in-box .head h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: .3rem;
+}
+.icons .log-in-box .head a{
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+.icons .log-in-box .head a:hover{
+    border-bottom: .1rem solid var(--primary);
+    line-height: .7;
+}
+.icons .log-in-box .body .title{
+    display: flex;
+}
+.icons .log-in-box .body .title h3{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--lite-black);
+    margin-bottom: .5rem;
+}
+.icons .log-in-box .body .title i{
+    font-size: .5rem;
+    color: red;
+    margin-top: .5rem;
+    margin-left: .2rem;
+}
+.icons .log-in-box .body .email{
+    margin-bottom: 2rem;
+}
+.icons .log-in-box .body input{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid var(--lite-black);
+    border-radius: .5rem;
+}
+.icons .log-in-box .body input::placeholder{
+    color: var(--lite-black);
+}
+.icons .log-in-box .body .btn{
+    background-color: var(--primary);
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.icons .log-in-box .footer{
+    margin: 3rem 0 2rem;
+}
+.icons .log-in-box .footer a{
+    font-size: 1.2rem;
+    color: var(--primary);
 }
 /* log-in box end  */
 
