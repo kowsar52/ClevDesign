@@ -1,0 +1,499 @@
+/* for show-hide css star */
+.d-block{
+    display: block !important;
+}
+.d-none{
+    display: none !important;
+}
+/* for show-hide css end */
+
+.flex {
+    display: flex !important;
+}
+
+.flex-column {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.justify-between {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.justify-center {
+    display: flex !important;
+    justify-content: space-center !important;
+}
+.relative{
+    position: relative !important;
+}
+.absolute{
+    position: absolute !important;
+}
+/* font related class start */
+.font-w-300 {
+    font-weight: 300 !important;
+}
+
+.font-w-400 {
+    font-weight: 400 !important;
+}
+
+.font-w-500 {
+    font-weight: 500 !important;
+}
+
+.font-w-600 {
+    font-weight: 600 !important;
+}
+
+.font-w-bold{
+    font-family: "Gilroy-ExtraBold",sans-serif !important;
+}
+.font-w-light{
+    font-family: "Gilroy-Light",sans-serif !important;
+}
+.font-10{
+    font-size: 1rem !important;
+}
+.font-15{
+    font-size: 1.5rem !important;
+}
+.font-20{
+    font-size: 2rem !important;
+}
+.font-25{
+    font-size: 2.5rem !important;
+}
+.font-30{
+    font-size: 3rem !important;
+}
+.font-35{
+    font-size: 3.5rem !important;
+}
+.font-40{
+    font-size: 4rem !important;
+}
+.font-45{
+    font-size: 4.5rem !important;
+}
+.font-50{
+    font-size: 5rem !important;
+}
+
+.line-h-10{
+    line-height: 1 !important;
+}
+.line-h-12{
+    line-height: 1.2 !important;
+}
+.line-h-14{
+    line-height: 1.4 !important;
+}
+/* font related class end */
+/* for inline color */
+.primary{
+    color: var(--primary) !important;
+}
+.green{
+    color: var(--green) !important;
+}
+.lite-black{
+    color: var(--lite-black) !important;
+}
+/* margin css */
+.m-5 {
+    margin: .5rem !important;
+}
+
+.m-10 {
+    margin: 1rem !important;
+}
+
+.m-15 {
+    margin: 1.5rem !important;
+}
+
+.m-20 {
+    margin: 2rem !important;
+}
+.m-25 {
+    margin: 2.5rem !important;
+}
+
+.m-30 {
+    margin: 3rem !important;
+}
+
+.m-35 {
+    margin: 3.5rem !important;
+}
+
+.m-40 {
+    margin: 4rem !important;
+}
+.m-45 {
+    margin: 4.5rem !important;
+}
+
+.m-50 {
+    margin: 5rem !important;
+}
+/* margin top css */
+.m-t-5 {
+    margin-top: .5rem !important;
+}
+
+.m-t-10 {
+    margin-top: 1rem !important;
+}
+
+.m-t-15 {
+    margin-top: 1.5rem !important;
+}
+
+.m-t-20 {
+    margin-top: 2rem !important;
+}
+.m-t-25 {
+    margin-top: 2.5rem !important;
+}
+
+.m-t-30 {
+    margin-top: 3rem !important;
+}
+
+.m-t-35 {
+    margin-top: 3.5rem !important;
+}
+
+.m-t-40 {
+    margin-top: 4rem !important;
+}
+.m-t-45 {
+    margin-top: 4.5rem !important;
+}
+
+.m-t-50 {
+    margin-top: 5rem !important;
+}
+
+/* margin right css */
+.m-r-5 {
+    margin-right: .5rem !important;
+}
+
+.m-r-10 {
+    margin-right: 1rem !important;
+}
+
+.m-r-15 {
+    margin-right: 1.5rem !important;
+}
+
+.m-r-20 {
+    margin-right: 2rem !important;
+}
+.m-r-25 {
+    margin-right: 2.5rem !important;
+}
+
+.m-r-30 {
+    margin-right: 3rem !important;
+}
+
+.m-r-35 {
+    margin-right: 3.5rem !important;
+}
+
+.m-r-40 {
+    margin-right: 4rem !important;
+}
+.m-r-45 {
+    margin-right: 4.5rem !important;
+}
+
+.m-r-50 {
+    margin-right: 5rem !important;
+}
+/* margin bottom css */
+.m-b-5 {
+    margin-bottom: .5rem !important;
+}
+
+.m-b-10 {
+    margin-bottom: 1rem !important;
+}
+
+.m-b-15 {
+    margin-bottom: 1.5rem !important;
+}
+
+.m-b-20 {
+    margin-bottom: 2rem !important;
+}
+.m-b-25 {
+    margin-bottom: 2.5rem !important;
+}
+
+.m-b-30 {
+    margin-bottom: 3rem !important;
+}
+
+.m-b-35 {
+    margin-bottom: 3.5rem !important;
+}
+
+.m-b-40 {
+    margin-bottom: 4rem !important;
+}
+.m-b-45 {
+    margin-bottom: 4.5rem !important;
+}
+
+.m-b-50 {
+    margin-bottom: 5rem !important;
+}
+/* margin left css */
+.m-l-5 {
+    margin-left: .5rem !important;
+}
+
+.m-l-10 {
+    margin-left: 1rem !important;
+}
+
+.m-l-15 {
+    margin-left: 1.5rem !important;
+}
+
+.m-l-20 {
+    margin-left: 2rem !important;
+}
+.m-l-25 {
+    margin-left: 2.5rem !important;
+}
+
+.m-l-30 {
+    margin-left: 3rem !important;
+}
+
+.m-l-35 {
+    margin-left: 3.5rem !important;
+}
+
+.m-l-40 {
+    margin-left: 4rem !important;
+}
+.m-l-45 {
+    margin-left: 4.5rem !important;
+}
+
+.m-l-50 {
+    margin-left: 5rem !important;
+}
+
+/* margin css end */
+
+/* padding css */
+.p-5 {
+    padding: .5rem !important;
+}
+
+.p-10 {
+    padding: 1rem !important;
+}
+
+.p-15 {
+    padding: 1.5rem !important;
+}
+
+.p-20 {
+    padding: 2rem !important;
+}
+.p-25 {
+    padding: 2.5rem !important;
+}
+
+.p-30 {
+    padding: 3rem !important;
+}
+
+.p-35 {
+    padding: 3.5rem !important;
+}
+
+.p-40 {
+    padding: 4rem !important;
+}
+.p-45 {
+    padding: 4.5rem !important;
+}
+
+.p-50 {
+    padding: 5rem !important;
+}
+/* padding top css */
+.p-t-5 {
+    padding-top: .5rem !important;
+}
+
+.p-t-10 {
+    padding-top: 1rem !important;
+}
+
+.p-t-15 {
+    padding-top: 1.5rem !important;
+}
+
+.p-t-20 {
+    padding-top: 2rem !important;
+}
+.p-t-25 {
+    padding-top: 2.5rem !important;
+}
+
+.p-t-30 {
+    padding-top: 3rem !important;
+}
+
+.p-t-35 {
+    padding-top: 3.5rem !important;
+}
+
+.p-t-40 {
+    padding-top: 4rem !important;
+}
+.p-t-45 {
+    padding-top: 4.5rem !important;
+}
+
+.p-t-50 {
+    padding-top: 5rem !important;
+}
+
+/* padding right css */
+.p-r-5 {
+    padding-right: .5rem !important;
+}
+
+.p-r-10 {
+    padding-right: 1rem !important;
+}
+
+.p-r-15 {
+    padding-right: 1.5rem !important;
+}
+
+.p-r-20 {
+    padding-right: 2rem !important;
+}
+.p-r-25 {
+    padding-right: 2.5rem !important;
+}
+
+.p-r-30 {
+    padding-right: 3rem !important;
+}
+
+.p-r-35 {
+    padding-right: 3.5rem !important;
+}
+
+.p-r-40 {
+    padding-right: 4rem !important;
+}
+.p-r-45 {
+    padding-right: 4.5rem !important;
+}
+
+.p-r-50 {
+    padding-right: 5rem !important;
+}
+/* padding bottom css */
+.p-b-5 {
+    padding-bottom: .5rem !important;
+}
+
+.p-b-10 {
+    padding-bottom: 1rem !important;
+}
+
+.p-b-15 {
+    padding-bottom: 1.5rem !important;
+}
+
+.p-b-20 {
+    padding-bottom: 2rem !important;
+}
+.p-b-25 {
+    padding-bottom: 2.5rem !important;
+}
+
+.p-b-30 {
+    padding-bottom: 3rem !important;
+}
+
+.p-b-35 {
+    padding-bottom: 3.5rem !important;
+}
+
+.p-b-40 {
+    padding-bottom: 4rem !important;
+}
+.p-b-45 {
+    padding-bottom: 4.5rem !important;
+}
+
+.p-b-50 {
+    padding-bottom: 5rem !important;
+}
+/* padding left css */
+.p-l-5 {
+    padding-bottom: .5rem !important;
+}
+
+.p-l-10 {
+    padding-bottom: 1rem !important;
+}
+
+.p-l-15 {
+    padding-bottom: 1.5rem !important;
+}
+
+.p-l-20 {
+    padding-bottom: 2rem !important;
+}
+.p-l-25 {
+    padding-bottom: 2.5rem !important;
+}
+
+.p-l-30 {
+    padding-bottom: 3rem !important;
+}
+
+.p-l-35 {
+    padding-bottom: 3.5rem !important;
+}
+
+.p-l-40 {
+    padding-bottom: 4rem !important;
+}
+.p-l-45 {
+    padding-bottom: 4.5rem !important;
+}
+
+.p-l-50 {
+    padding-bottom: 5rem !important;
+}
+
+/* padding css end */
