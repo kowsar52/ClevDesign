@@ -1,4 +1,15 @@
-
+.btn{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 1.4rem;
+    padding: 1.5rem 4rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    color: var(--text-white);
+}
 .flex {
     display: flex !important;
 }
@@ -30,6 +41,9 @@
 }
 .absolute{
     position: absolute !important;
+}
+.fixed{
+    position: fixed !important;
 }
 /* font related class start */
 .font-w-300 {

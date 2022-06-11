@@ -81,27 +81,15 @@ i{
 
 
 
-/* navigation top css start */
-header .top-section{
-    background: var(--secondary);
-}
-
-header .top-section i{
-    color: var(--text-white);
-    font-size: 1.2rem;
-}
-header .top-section h3{
-    color: var(--text-white);
-    font-size: 1.2rem;
-}
-header .top-section .social-media i{
-    font-size: 1.4rem;
-    margin-left: 1rem;
-}
-/* navigation top css end */
-
-
 /* main navigation css start */
+header{
+    width: 100%;
+    height: 90%;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
 header .hero-bg-img{
     width: 100%;
     height: 100vh;
@@ -111,14 +99,8 @@ header .hero-bg-img{
 header .nav-bg{
     background: var(--bg-white);
     width: 100%;
-    height: 12rem;
-    top: 40px;
+    height: 8rem;
 }
-/* .sticky{
-    position: fixed;
-    height: 8rem !important;
-    margin-top: -4rem;
-} */
 header .left,
 header .right{
     display: flex;
@@ -128,81 +110,40 @@ header .left .logo i{
     color: var(--green);
     font-size: 3.5rem;
 }
-header .left .menu ul{
+header .left .menu{
+    margin-left: 3rem;
+}
+header .left .menu ul.main-ul{
     display: flex;
     align-items: center;
     margin-top: 2rem;
 }
-header .left .menu ul li{
+header .left .menu ul.main-ul li{
     margin-left: 3rem;
     align-items: center;
     cursor: pointer;
 }
 /* for li active */
-li.active{
-    color: var(--hover-color);
-}
-/* for li active */
 
-header .left .menu ul li:hover a{
+header ul.main-ul li:hover a{
     color: var(--hover-color);
 }
-header .left .menu ul li a{
+header .left .menu ul.main-ul li a{
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 }
-header .left .menu ul li i{
+header .left .menu ul.main-ul li i{
     font-size: 1.2rem;
     margin-left: 1rem;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
 }
-/* for submenu start */
-.menu li{
-    position: relative;
-    border-bottom: 2rem solid transparent;
+.rotate{
+    transform: rotate(180deg) !important;
+    transition: .5s ease-in-out !;
 }
-.menu li ul.sub-menu{
-    position: absolute;
-    width: 20rem;
-    padding: 2rem 0;
-    display: block;
-    background: var(--bg-white);
-    border-radius: .5rem;
-    box-shadow: 0 0 1rem 0 rgba(70, 70, 70, 0.146);
-    z-index: 999;
-    margin-top: 2rem;
-    display: none;
-}
-.menu li ul.sub-menu li{
-    margin: 0;
-    width: 20rem;
-    padding: 1rem 0 1rem 2rem;
-    border-bottom: 0;
-    transition: all .3s ease-in-out;
-}
-.menu li ul.sub-menu li a{
-    font-family: "Gilroy-Light",sans-serif;
-    color: var(--secondary);
-    transition: all .3s ease-in-out;
-}
-.menu li:hover ul.sub-menu{
-    display: block;
-}
-.menu li ul.sub-menu li:hover{
-    background-color: #e9e6e6;
-}
-.menu li ul.sub-menu li:hover a{
-    color: var(--hover-color);
-}
-.sub-menu li.active{
-    background-color: #e9e6e6;
-}
-.sub-menu li.active a{
-    color: var(--hover-color) !important;
-}
-/* for submenu end */
-
 header .right .contact{
     display: flex;
     align-items: center;
@@ -238,94 +179,51 @@ header .right .icons span{
     border-radius: 1rem;
 }
 
-/* log-in box start */
-header .right .icons .log-in{
-    margin-top: 2rem;
-    border-bottom: 2rem solid transparent;
-}
-header .right .icons .log-in-box{
-    width: 30rem;
-    background: var(--bg-white);
-    min-height: 30rem;
-    right: -10rem;
-    top: 7rem;
-    border: .2rem solid var(--lite-black);
-    border-top: .2rem solid var(--primary);
-    box-shadow: 0 0 1rem 0 rgba(70, 70, 70, 0.146);
-    display: none;
-}
-header .right .icons .log-in:hover .log-in-box{
-    display: block;
-}
-.icons .log-in-box .head{
-    display: flex;
-    align-items: center;
-    margin: 4rem 0 2rem;
-}
-.icons .log-in-box .head h3{
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-right: .3rem;
-}
-.icons .log-in-box .head a{
-    font-size: 1.4rem;
-    color: var(--primary);
-}
-.icons .log-in-box .head a:hover{
-    border-bottom: .1rem solid var(--primary);
-    line-height: .7;
-}
-.icons .log-in-box .body .title{
-    display: flex;
-}
-.icons .log-in-box .body .title h3{
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--lite-black);
-    margin-bottom: .5rem;
-}
-.icons .log-in-box .body .title i{
-    font-size: .5rem;
-    color: red;
-    margin-top: .5rem;
-    margin-left: .2rem;
-}
-.icons .log-in-box .body .email{
-    margin-bottom: 2rem;
-}
-.icons .log-in-box .body input{
-    width: 100%;
-    padding: 1rem;
-    border: .1rem solid var(--lite-black);
-    border-radius: .5rem;
-}
-.icons .log-in-box .body input::placeholder{
-    color: var(--lite-black);
-}
-.icons .log-in-box .body .btn{
-    background-color: var(--primary);
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: .8rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-.icons .log-in-box .footer{
-    margin: 3rem 0 2rem;
-}
-.icons .log-in-box .footer a{
-    font-size: 1.2rem;
-    color: var(--primary);
-}
-/* log-in box end  */
-
-/* for mobile devices start */
-.mobile-menu{
-    display: none;
-}
-.mobile-contact{
-    display: none;
-}
-/* for mobile devices end */
 
 /* main navigation css end */
+
+
+/* hero section start */
+.hero-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12rem;
+    align-items: center;
+}
+.hero-container .hero-left .hero-h1 {
+    color: var(--text-white);
+    font-size: 6rem;
+    line-height: .8;
+}
+.hero-container .hero-left .hero-h1 span{
+    color:var(--primary);
+}
+.hero-container .hero-left .hero-h3{
+    color: var(--green);
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.hero-container .hero-left .hero-h4{
+    color: var(--text-white);
+    font-weight: 300;
+    font-size: 2rem;
+}
+.hero-container .hero-left .order{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    line-height: 2;
+    position: relative;
+}
+.hero-container .hero-left .order span {
+    font-size: 1.5rem;
+    color: var(--lite-black);
+    position: absolute;
+    top: 50%;
+    left: 22%;
+}
+.hero-container .hero-right img{
+    height: 100%;
+    width: 100%;
+}
+
+/* hero section end */

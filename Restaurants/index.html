@@ -15,11 +15,52 @@
 
 
     <!-- jquery linking -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-jquery/2.12.3/cloudinary-jquery.min.js" integrity="sha512-BbxhlH14CZC4hPY0ChXthOWzOdSUNy17CaO7sNMJ8SjUxfTkjH0TGXauuM53lYkgs7lXsFqvWbZvgg7vIue7hQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
     <header>
+        <!-- for mobile devices bottom nav -->
+            <ul class="mobile-nav-bottom">
+                <li><i class="fa-solid fa-shop"></i><h6>SHOP</h6></li>
+                <li class="log-in relative">
+                    <i class="menu-icon fa-solid fa-user"></i><h6>MY ACCOUNT</h6>
+
+                    <!-- for user log in start -->
+                    <div class="log-in-box absolute ">
+                        <div class="log-in-container"> <!--in responsive file-->
+                            <div class="head">
+                                <h3>Sign in</h3>
+                                <a href="#">Create an Account</a>
+                            </div>
+
+                            <div class="body">
+                                <div class="email">
+                                    <div class="title"><h3>Username or Email</h3><i class="fa-solid fa-asterisk"></i></div>
+                                    <input type="email" name="email" id="" placeholder="Username">
+                                </div>
+                                <div class="password">
+                                    <div class="title"><h3>Password</h3><i class="fa-solid fa-asterisk"></i></div>
+                                    <input type="password" name="password" id="" placeholder="Password">
+                                </div>
+                                <div class="text-center m-t-15">
+                                    <button class="btn" type="submit">LOGIN</button>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="#">Lost your password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- for user log in end -->
+                </li>
+                <li><i class="menu-icon fa-solid fa-magnifying-glass"></i><h6>SEARCH</h6></li>
+                <li><i class="menu-icon fa-solid fa-tag"></i><span>54</span><h6>WISHLIST</h6></li>
+                <li><i class="menu-icon fa-solid fa-cart-shopping"></i><span>0</span><h6>CART</h6></li>
+            </ul>
+
+    <!-- for mobile bottom navend -->
         <!-- navigation top start -->
         <div class="top-section d-none"> <!--shorts css file-->
 
@@ -47,13 +88,13 @@
 
 
         <!-- main navigation start -->
-        <img src="./images/hero-bg.jpg" alt="hero-bg" class="hero-bg-img">
-        <div class="nav-bg absolute"> <!--in shorts css file-->
-            <div class="container justify-between m-t-20">
+        <!-- <img src="./images/hero-bg.jpg" alt="hero-bg" class="hero-bg-img"> -->
+        <div class="nav-bg"> <!--in shorts css file-->
+            <div class="container justify-between">
                 <div class="left">
 
                     <button class="mobile-menu"> <!-- for mobile only -->
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars open"></i>
                     </button>
 
                     <div class="logo">
@@ -64,10 +105,16 @@
                         <i class="fa-solid fa-phone-flip"></i>
                     </a>
 
-                    <div class="menu m-l-30"> <!--in shorts css file-->
-                        <ul>
-                            <li class="active">
-                                <a href="#">
+                    <div class="menu"> 
+                        <ul class="main-ul">
+                            <li class="mobile-menu-top d-block">
+                                <div class="logo">
+                                    <a href="#"><i class="fa-solid fa-hotdog"></i></a>
+                                </div>
+                                <i class="fa-solid fa-xmark close"></i>
+                            </li>
+                            <li class="active dropdown">
+                                <a href="#" class="dropdown-trigger">
                                     <span>Home</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -86,14 +133,14 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Shop</a></li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="dropdown-trigger">
                                     <span>Blog</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
 
                                 <!-- for blog submenu start -->
                                 <ul class="sub-menu">
-                                    <li class="active"><a href="#">Blog 1</a></li>
+                                    <li><a href="#">Blog 1</a></li>
                                     <li><a href="#">Blog 2</a></li>
                                     <li><a href="#">Blog 3</a></li>
                                     <li><a href="#">Blog 4</a></li>
@@ -101,14 +148,14 @@
                                 <!-- for blog submenu end -->
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="dropdown-trigger">
                                     <span>Page</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
 
                                 <!-- for page submenu start -->
                                 <ul class="sub-menu">
-                                    <li class="active"><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 1</a></li>
                                     <li><a href="#">Page 2</a></li>
                                     <li><a href="#">Page 3</a></li>
                                     <li><a href="#">Page 4</a></li>
@@ -169,13 +216,29 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>    
         <!-- main navigation end -->
 
-        <div class="container">
-            
+        <div class="hero-container row">
+            <div class="hero-left col-12 col-lg-6">
+                <h1 class="hero-h1">UNLIMITED
+                    MEDIUM <span>PIZZAS</span></h1>
+                    <h3 class="hero-h3">
+                        Medium 2-topping* pizza
+                    </h3>
+                    <h4 class="hero-h4">
+                        *Additional charge for premium toppings. Minimum of 2 required.
+                    </h4>
+                    <div class="order">
+                        <a href="javascript:;" class="btn">ORDER NOW</a>
+                        <h3 class="hero-h3">$12.99 <span>$19.99</span></h3>
+                    </div>
+            </div>
+            <div class="hero-right col-12 col-lg-6">
+                <img src="./images/h1_pizza.png" alt="">
+            </div>
         </div>
+ 
 
     </header>
 
