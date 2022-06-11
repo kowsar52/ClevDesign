@@ -20,3 +20,17 @@ $(".dropdown-trigger").click(function(){
     
 })
 
+var StickyNav = $(".sticky-navbar").offset().top //navbar top height ex:44
+
+$(window).scroll(function(){ //scroll event
+
+    var scrollTop = $(window).scrollTop() //scroll top value
+    if(scrollTop >= StickyNav){ // jokhon 44 theke boro ba somob hobe > greater than  = equal
+        $(".sticky-navbar").addClass("sticky")
+    }
+    else{
+        $(".sticky-navbar").removeClass("sticky")
+    }
+})
+
+

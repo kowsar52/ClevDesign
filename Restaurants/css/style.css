@@ -17,6 +17,7 @@
       --secondary: #171616;
       --text-white: #ffffff;
       --bg-white: #ffffff;
+      --bg-lite: #f7f6e6;
       --lite-black: #b3b3b3;
       --green: #028702;
       --hover-color:#e3af07; 
@@ -42,7 +43,7 @@ button{
 body{
     line-height: 1.5;
     font-size: 1.6rem;
-    height: 1000px;
+    overflow-x: hidden !important;
 }
 a{
     text-decoration: none;
@@ -89,6 +90,7 @@ header{
     background-position: center;
     background-size: cover;
     z-index: 999;
+    position: relative;
 }
 header .hero-bg-img{
     width: 100%;
@@ -227,3 +229,48 @@ header .right .icons span{
 }
 
 /* hero section end */
+
+
+/* menu section start */
+.menus-section {
+    margin: 5rem 0;
+}
+.menus-section .menus{
+    align-items: center;
+    text-align: center;
+}
+.menus-section .menus-bg{
+    background: var(--bg-white);
+    margin: 5rem 0;
+}
+.menus-section .menus .image .menus-h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+/* cards designing */
+.menus-section .cards-bg{
+    background: var(--bg-lite);
+}
+.menus-section .card{}
+.menus-section .card .left{}
+.menus-section .card .left .card-h1{}
+.menus-section .card .left .card-h1{}
+.menus-section .card .left .card-h3{}
+.menus-section .card .left .price{}
+.menus-section .card .right .circle{
+    background: var(--primary);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    transition: .5s ease;
+}
+.menus-section .card .right img{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.menus-section .card:hover .right .circle{
+    transform: scale(1.2);
+}
+.menus-section .card
+/* menu section end */
