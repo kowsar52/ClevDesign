@@ -10,6 +10,18 @@
 .btn:hover{
     color: var(--text-white);
 }
+.top-title{
+    margin: 6rem 0 3rem 0;
+}
+.top-title .title-h1{
+    color: var(--secondary);
+    font-size: 3.5rem;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 700;
+}
+.cut{
+    text-decoration: line-through;
+}
 .flex {
     display: flex !important;
 }
@@ -116,6 +128,9 @@
 .lite-black{
     color: var(--lite-black) !important;
 }
+.text-lite{
+    color: var(--lite-black) !important;
+}
 .bg-white{
     background-color: var(--bg-white) !important;
 }
@@ -127,6 +142,15 @@
 }
 .bg-lite{
     background-color: var(--bg-lite) !important;
+}
+
+@media(min-width: 700px) and (max-width: 1000px){
+    .grid-s-4{
+        grid-column-start: 4 !important;
+    }
+    .grid-e-10{
+        grid-column-end: 10 !important;
+    }
 }
 /* margin css */
 .m-5 {

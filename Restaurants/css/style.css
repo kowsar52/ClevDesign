@@ -1,4 +1,5 @@
 /* custom font linking */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: "Gilroy-ExtraBold";
@@ -22,7 +23,7 @@
       --secondary: #171616;
       --text-white: #ffffff;
       --bg-white: #ffffff;
-      --bg-lite: #f7f6e6;
+      --bg-lite: #feefd6;
       --lite-black: #b3b3b3;
       --green: #1a941a;
       --bg-green: #1a941a;
@@ -303,3 +304,94 @@ header .right .icons span{
     transform: scale(1.2);
 }
 /* menu section end */
+
+/* populer dishes start */
+.populer-dishes .dishes-trigger{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.populer-dishes .dishes-trigger li {
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    margin: 0 0.5rem;
+    border: 1px solid var(--lite-black);
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+}
+.populer-dishes .dishes-trigger li a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+.populer-dishes .dishes-trigger li:hover{
+    border: 1px solid var(--primary);
+}
+.populer-dishes .dishes-trigger li.active{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+/* items section start */
+.items-section{}
+.items-section .box{
+    padding: 1rem;
+    border: 1px solid var(--lite-black);
+    border-radius: 2rem;
+}
+.items-section .box .image{
+    position: relative;
+    text-align: center;
+}
+.items-section .box .img-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 48%;
+    width: 100%;
+    background: var(--bg-lite);
+    border-radius: 2rem;
+    z-index: -1;
+    transition: .3s ease;
+}
+.items-section .box:hover .img-bg{
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+}
+.items-section .box img {
+    width: 80%;
+}
+.items-section .box .bottom{
+    padding: 0 .5rem;
+    margin: 2rem 0;
+} 
+.items-section .box .box-h3{
+    margin: 1rem 0;
+}
+.items-section .box .box-p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: var(--lite-black);
+}
+.items-section .box .box-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-section .box .box-footer img.icon{
+    width: 2.5rem !important;
+    height: auto !important;
+    background-color: var(--primary);
+    padding: .6rem;
+    border-radius: .6rem;
+}
+
+
+
+
+
+
+/* items section start */
+
+/* populer dishes end */
+
