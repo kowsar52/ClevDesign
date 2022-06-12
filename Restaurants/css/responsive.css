@@ -54,7 +54,12 @@
         top: 49%;
         right: -4%;
     }
-
+    .menus-section .card {
+        margin: 4rem 0;
+    }
+    .menus-section .cards{
+        grid-gap: 0rem;
+    }
     .col-sm-1 {
         grid-column: span 1 !important;
     }
@@ -99,7 +104,7 @@
         grid-column: span 11 !important;
     }
     
-    .col-12 {
+    .col-sm-12 {
         grid-column: span 12 !important;
     }
 }
@@ -588,6 +593,14 @@
         text-align: center;
         margin: 5rem 0;
     }
+
+    .menus-section .card .right img{
+        position: absolute;
+        top: 10%;
+        left: -8%;
+        width: 100%;
+        height: auto;
+    }
     /* for li active */
     li.active{
         color: var(--hover-color);
@@ -672,6 +685,18 @@
     header .right .icons ul li .menu-icon {
         font-size: 1.5rem;
         padding: 1.5rem;
+    }
+
+    .menus-section .card .left .card-h5 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    .menus-section .card .left .card-h3 {
+        line-height: 1.1;
+        font-size: 3rem;
+    }
+    .menus-section .card .left .price {
+        font-size: 2rem;
     }
     
     /* for xl devices cols */

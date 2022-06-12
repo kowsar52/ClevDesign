@@ -116,6 +116,18 @@
 .lite-black{
     color: var(--lite-black) !important;
 }
+.bg-white{
+    background-color: var(--bg-white) !important;
+}
+.bg-green{
+    background-color: var(--bg-green) !important;
+}
+.text-white{
+    color: var(--text-white) !important;
+}
+.bg-lite{
+    background-color: var(--bg-lite) !important;
+}
 /* margin css */
 .m-5 {
     margin: .5rem !important;

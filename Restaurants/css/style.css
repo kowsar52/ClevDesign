@@ -8,6 +8,11 @@
     font-family: "Gilroy-Light";
     src: url(../font-family/Gilroy-Font/Radomir\ Tinkov\ -\ Gilroy-Light.otf);
   }
+  @font-face {
+    font-family: "poco-icon";
+    src: url(../font-family/Gilroy-Font/poco-icon-1.0.0.woff2);
+  }
+
 
   /* finished */
 
@@ -19,7 +24,8 @@
       --bg-white: #ffffff;
       --bg-lite: #f7f6e6;
       --lite-black: #b3b3b3;
-      --green: #028702;
+      --green: #1a941a;
+      --bg-green: #1a941a;
       --hover-color:#e3af07; 
   }
 *{
@@ -150,8 +156,10 @@ header .right .contact{
     display: flex;
     align-items: center;
 }
-header .right .icons{
-    margin-left: 2rem;
+header .right img{
+    margin-right: 1rem;
+    width: 50px;
+    height: auto;
 }
 header .right .icons ul li{
     display: inline-block;
@@ -243,6 +251,9 @@ header .right .icons span{
     background: var(--bg-white);
     margin: 5rem 0;
 }
+.menus-section .menus .image{
+    cursor: pointer;
+}
 .menus-section .menus .image .menus-h3{
     font-size: 1.4rem;
     font-weight: 700;
@@ -251,26 +262,44 @@ header .right .icons span{
 .menus-section .cards-bg{
     background: var(--bg-lite);
 }
-.menus-section .card{}
-.menus-section .card .left{}
-.menus-section .card .left .card-h1{}
-.menus-section .card .left .card-h1{}
-.menus-section .card .left .card-h3{}
-.menus-section .card .left .price{}
+.menus-section .card{
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+    padding: 2rem 4rem;
+    background-color: var(--bg-white);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.menus-section .card .left{
+    padding-right: 2rem;
+}
+.menus-section .card .left .card-h3{
+    line-height: 1.1;
+}
+.menus-section .card .left .card-h5{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: .5rem 0;
+}
+.menus-section .card .left .price{
+    margin-top: 1rem; 
+}
 .menus-section .card .right .circle{
     background: var(--primary);
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 100%;
     transition: .5s ease;
 }
 .menus-section .card .right img{
     position: absolute;
-    top: 15%;
-    left: 5%;
+    top: 20%;
+    left: 0%;
+    width: 80%;
+    height: auto;
 }
 .menus-section .card:hover .right .circle{
     transform: scale(1.2);
 }
-.menus-section .card
 /* menu section end */
