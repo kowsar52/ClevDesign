@@ -34,3 +34,35 @@ $(window).scroll(function(){ //scroll event
 })
 
 
+$(".populer-dishes .dishes-trigger li").click(function(){
+    
+    $(".populer-dishes .dishes-trigger").find("li.active").removeClass("active")
+    $(this).addClass("active")
+
+    $(".populer-dishes .items-section").find(".active").removeClass("active")
+    var target =  $(this).data("target")
+    $(".populer-dishes .items-section").find(target).addClass('active')
+})
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        item: 3,
+        margin: 20,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        responsive:{
+            1000:{
+                items:3,
+            },
+            700:{
+                items:2
+            },
+            100:{
+                items:1
+            }
+        }
+    })
+})
+

@@ -1,6 +1,7 @@
 /* custom font linking */
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Norican&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @font-face {
     font-family: "Gilroy-ExtraBold";
     src: url(../font-family/Gilroy-Font/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf);
@@ -19,14 +20,14 @@
 
   /* colors */
   :root{
-      --primary: #f9bf03;
+      --primary: #f9d403;
       --secondary: #171616;
       --text-white: #ffffff;
       --bg-white: #ffffff;
       --bg-lite: #feefd6;
-      --lite-black: #b3b3b3;
-      --green: #1a941a;
-      --bg-green: #1a941a;
+      --lite-black: #a0a0a0;
+      --green: #2ca52c;
+      --bg-green: #2ca52c;
       --hover-color:#e3af07; 
   }
 *{
@@ -109,6 +110,7 @@ header .nav-bg{
     background: var(--bg-white);
     width: 100%;
     height: 8rem;
+    box-shadow: 0 0 1rem 0 #00000047;
 }
 header .left,
 header .right{
@@ -316,12 +318,20 @@ header .right .icons span{
     margin: 0 0.5rem;
     border: 1px solid var(--lite-black);
     border-radius: 25px;
-    transition: .3s ease-in-out;
-}
-.populer-dishes .dishes-trigger li a{
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--secondary);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+/* items section start */
+.items-section .box{
+    padding: 1rem;
+    border: 1px solid var(--lite-black);
+    border-radius: 2rem;
+    display: none;
 }
 .populer-dishes .dishes-trigger li:hover{
     border: 1px solid var(--primary);
@@ -330,13 +340,8 @@ header .right .icons span{
     background: var(--primary);
     border: 1px solid var(--primary);
 }
-
-/* items section start */
-.items-section{}
-.items-section .box{
-    padding: 1rem;
-    border: 1px solid var(--lite-black);
-    border-radius: 2rem;
+.items-section .box.active{
+    display: block;
 }
 .items-section .box .image{
     position: relative;
@@ -360,6 +365,11 @@ header .right .icons span{
 }
 .items-section .box img {
     width: 80%;
+    transition: .5s ease;
+}
+.items-section .box:hover img{
+    /* width: 90%; */
+    transform: scale(1.1);
 }
 .items-section .box .bottom{
     padding: 0 .5rem;
@@ -378,7 +388,22 @@ header .right .icons span{
     justify-content: space-between;
     align-items: center;
 }
-.items-section .box .box-footer img.icon{
+.items-section .box .bottom .fa-star{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+.items-section .box .icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--lite-black);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.items-section .box .icon:hover{
+    color: var(--secondary);
+}
+.items-section .box img.icon{
     width: 2.5rem !important;
     height: auto !important;
     background-color: var(--primary);
@@ -386,12 +411,304 @@ header .right .icons span{
     border-radius: .6rem;
 }
 
-
-
-
-
-
-/* items section start */
-
 /* populer dishes end */
 
+/* hotdog section start */
+.hotdog-section{
+    height: 50rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.317),rgba(0, 0, 0, 0.317)), url("../images/pizza-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+}
+.hotdog-section .left-img{
+    position: relative;
+    align-items: center;
+}
+.hotdog-section .left-img img{
+   position: absolute;
+   top: -4rem;
+    left: 10%;
+}
+.hotdog-section .left-img .img-h1{
+    position: absolute;
+    top: 1rem;
+    left: 20%;
+    font-size: 4rem;
+    color: var(--primary);
+    /* text-shadow: 2px 2px #ff0000; */
+ }
+ .hotdog-section .left-img span{
+    display: flex;
+    line-height: 0.2;
+    color: var(--secondary);
+    text-transform: uppercase;
+ }
+ .hotdog-section .text .top-text{
+     display: flex;
+     justify-content: space-between;
+ }
+ .hotdog-section .text .top-text h3{
+ font-size: 3rem;
+ color: var(--text-white);
+ text-shadow: 0.1rem 0.1rem #4a4848f0;
+ font-family: 'Norican', cursive;
+ }
+ .hotdog-section .text .top-text .image{
+    top: -4.5rem;
+    right: 5%;
+ }
+ .hotdog-section .text h1{
+    font-size: 10rem;
+    color: var(--primary);
+    text-shadow: 0.1rem 0.1rem #454242;
+    line-height: 1;
+    margin-bottom: 5rem;
+ }
+ .hotdog-section .text .top-text .deg-35{
+    transform: rotate(35deg);
+ }
+
+/* hotdog section end */
+
+/* top recipes section start  */
+.top-recipes-section{
+    margin-bottom: 10rem;
+}
+.top-recipes-section .top-title{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.top-recipes-section .top-title h6{
+    font-size: 1.5rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.top-recipes-section .top-title h6:hover{
+    color: var(--primary);
+}
+.top-recipes-section .top-title i{
+    background: var(--bg-green);
+    color: var(--text-white);
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.top-recipes-section .box{
+    padding: 1rem;
+    border: 1px solid var(--lite-black);
+    border-radius: 2rem;
+}
+.top-recipes-section .box .bg{
+    text-align: center;
+    align-items: center;
+    background: var(--bg-lite);
+    border-radius: 2rem;
+    display: flex;
+}
+.top-recipes-section .box img {
+    width: 50%;
+    height: 50%;
+}
+.top-recipes-section .box .bottom{
+    padding: 0 .5rem;
+    margin: 2rem 0;
+} 
+.top-recipes-section .box .box-h3{
+    font-size: 1.5rem;
+}
+.top-recipes-section .box .box-p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: var(--lite-black);
+}
+.top-recipes-section .box .box-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-recipes-section .box .icon{
+    top: 10px;
+    right: 10px;
+    color: var(--lite-black);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.top-recipes-section .box .icon:hover{
+    color: var(--secondary);
+}
+.top-recipes-section .box img.icon{
+    width: 2.5rem !important;
+    height: auto !important;
+    background-color: var(--primary);
+    padding: .6rem;
+    border-radius: .6rem;
+}
+.top-recipes-section .right-bg{
+    display: none;
+}
+
+/* top recipes section end  */
+
+/* feedback section start  */
+.feedback-section{
+    background: var(--bg-lite);
+    padding: 5rem 0;
+}
+.feedback-section .box{
+    padding: 3rem 3rem 2rem 3rem;
+    background: var(--bg-white);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.feedback-section .box .head img{
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+.feedback-section .box .head .avater h3{
+    font-family: 'Norican', cursive;
+    font-size: 1.4rem;
+}
+.feedback-section .box .head .avater p{
+    font-size: 1.2rem;
+}
+.feedback-section .box .stars .fa-star{
+    font-size: 1.2rem;
+}
+.feedback-section .owl-carousel{
+    position: relative;
+}
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav button span{
+    font-size: 2rem !important;
+    color: var(--lite-black);
+    margin: 0 !important;
+    padding: .5rem 1.8rem;
+    border: 0.1rem solid var(--lite-black) !important;
+    border-radius: 100%;
+    transition: .3s ease;
+}
+.owl-nav button span:hover{
+    color: var(--text-white);
+    background-color: var(--primary);
+    border: 0.1rem solid var(--primary) !important;
+}
+.owl-nav button.owl-prev{
+    position: absolute !important;
+    top: 40%;
+    left: -5% !important;
+}
+.owl-nav button.owl-next{
+    position: absolute !important;
+    top: 40%;
+    right: -5% !important;
+}
+.owl-dots{
+    text-align: center !important;
+}
+.owl-dots button.owl-dot{
+    height: 10px;
+    width: 10px;
+    margin: .5rem;
+    border-radius: 100%;
+    background: rgb(157, 154, 76) !important;
+    transition: .5s ease;
+}
+.owl-dots button.owl-dot.active{
+    background: var(--primary) !important;
+    width: 20px;
+    border-radius: 10PX;
+}
+/* feedback section end  */
+
+/* order food section start */
+.order-food {
+    overflow: hidden ;
+}
+.order-food .bg{
+    z-index: 1;
+    position: relative;
+    padding: 7rem;
+}
+.order-food .green-bg{
+    background: var(--bg-green);
+}
+.order-food .red-bg{
+    background: rgb(255, 119, 0);
+}
+.order-food .primary-bg{
+    background: var(--primary);
+}
+.order-food .bg img {
+    position: absolute;
+    width: 50rem;
+    right: -80%;
+    top: 20%;
+    z-index: -1;
+}
+.order-food .bg img.effect{
+    position: absolute;
+    width: 10rem;
+    right: 15%;
+    top: 30%;
+    transition: .5s ease;
+}
+.order-food .bg:hover img.effect{
+    transform: scale(4);
+}
+
+.order-food .bg h4{
+    color: var(--text-white);
+    font-family: 'Norican', cursive;
+    font-size: 3rem;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.order-food .bg h2{
+    color: var(--primary);
+    font-size: 7rem;
+    text-shadow: 1px 1px white;
+    line-height: 1;
+}
+.order-food .bg p{
+    color: var(--text-white);
+    text-shadow: 1px 1px #6a6a6a;
+    margin: 2rem 0;
+}
+.order-food .bg h3{
+    font-size: 3rem;
+    color: var(--primary);
+    text-shadow: 1px 1px white;
+    margin-bottom: 3rem;
+}
+
+
+.order-food .primary-bg h2{
+    color: rgb(255, 153, 0);
+    font-size: 7rem;
+    text-shadow: 1px 1px white;
+    line-height: 1;
+}
+.order-food .primary-bg p{
+    color: var(--text-white);
+    text-shadow: 1px 1px #6a6a6a;
+    margin: 2rem 0;
+}
+.order-food .primary-bg h3{
+    font-size: 3rem;
+    color: var(--secondary);
+    text-shadow: 1px 1px white;
+    margin-bottom: 3rem;
+}
+
+/* order food section end*/
