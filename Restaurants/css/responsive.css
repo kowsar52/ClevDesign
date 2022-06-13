@@ -97,6 +97,30 @@
         right: -21%;
         top: 20%;
     }
+    .footer-section .input-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    .footer-section .input-wrapper input{
+        border-radius: .5rem;
+        padding: 1rem 3rem 1rem 1rem;
+        padding-right: 8.5rem !important;
+    }
+    .footer-section .input-wrapper .btn{
+        position: absolute;
+        right: 180px !important;
+        top: 5px;
+        padding: 0.5rem;
+    }
+    .footer-bootom {
+        background: var(--bg-green);
+        display: block;
+        text-align: center;
+    }
+    .footer-bootom img{
+        width: 150px;
+        margin:0 0 5rem 0;
+    }
     .col-sm-1 {
         grid-column: span 1 !important;
     }
@@ -171,7 +195,7 @@
     .nav-bg .left{
         width: 100%;
         justify-content: space-between;
-        margin-top: 1.5rem;
+        margin-top: 1.4rem;
     }
     header .left .menu{
         position: absolute;
@@ -198,8 +222,12 @@
         justify-content: space-between;
         margin: 2rem;
     }
-    header .left .logo i {
-        font-size: 2.5rem !important;
+    header .nav-bg .left .logo a {
+        color: var(--green) !important;
+        font-size: 2rem !important;
+        margin-left: 0;
+        font-family: 'Norican', cursive;
+        text-shadow: 1px 1px var(--green);
     }
     header .left ul.main-ul .mobile-menu-top i.fa-xmark{
         font-size: 2rem;
@@ -403,6 +431,25 @@
         right: -20% !important;
         top: -20%;
     }
+    .footer-section .input-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    .footer-section .input-wrapper input{
+        border-radius: .5rem;
+        padding: 1rem 3rem 1rem 1rem;
+        padding-right: 8.5rem !important;
+    }
+    .footer-section .input-wrapper .btn{
+        position: absolute;
+        right: 80px;
+        top: 5px;
+        padding: 0.5rem;
+    }
+    .footer-bootom img{
+        width: 150px;
+        margin:0 0 5rem 0;
+    }
     /* for li active */
     li.active{
         color: var(--hover-color);
@@ -477,7 +524,6 @@
     }
     /* navigation top css end */
 
-
     /* for submenu start */
     .menu ul.main-ul li{
         position: relative;
@@ -526,13 +572,16 @@
     }
 
     header .left .logo i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     header .left .menu ul.main-ul li a {
         font-size: 1.2rem;
     }
     header .left .menu ul.main-ul li {
-        margin-left: 2rem;
+        margin-left: 1.3rem !important;
+    }
+    header .left .menu ul.main-ul li i{
+        margin-left: .3rem;
     }
     header .right .contact i{
         font-size: 4rem !important;
@@ -712,6 +761,21 @@
         width: 100%;
         margin: 4rem 0 0;
     }
+    .footer-section .input-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    .footer-section .input-wrapper input{
+        border-radius: .5rem;
+        padding: 1rem 3rem 1rem 1rem;
+        padding-right: 8.5rem !important;
+    }
+    .footer-section .input-wrapper .btn{
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        padding: 0.5rem;
+    }
     /* for li active */
     li.active{
         color: var(--hover-color);
@@ -778,14 +842,20 @@
         width: 75% !important;
         margin: 0 auto !important;
     }
+    header .nav-bg{
+        background: var(--bg-white);
+        width: 100%;
+        height: 9rem;
+        box-shadow: 0 0 1rem 0 #00000047;
+    }
     header .left .logo i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     header .left .menu ul.main-ul li a {
         font-size: 1.4rem;
     }
     header .left .menu ul.main-ul li {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     header .right .contact i{
         font-size: 5rem !important;

@@ -20,7 +20,7 @@
 
   /* colors */
   :root{
-      --primary: #f9d403;
+      --primary: #f9c803;
       --secondary: #171616;
       --text-white: #ffffff;
       --bg-white: #ffffff;
@@ -117,12 +117,14 @@ header .right{
     display: flex;
     align-items: center;
 }
-header .left .logo i{
+header .left .logo a{
     color: var(--green);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    font-family: 'Norican', cursive;
+    text-shadow: 1px 1px var(--green);
 }
 header .left .menu{
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 header .left .menu ul.main-ul{
     display: flex;
@@ -315,7 +317,7 @@ header .right .icons span{
 .populer-dishes .dishes-trigger li {
     display: inline-block;
     padding: 0.5rem 2.5rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     border: 1px solid var(--lite-black);
     border-radius: 25px;
     font-size: 1.4rem;
@@ -635,6 +637,8 @@ header .right .icons span{
 /* order food section start */
 .order-food {
     overflow: hidden ;
+    margin-bottom: 10rem
+    ;
 }
 .order-food .bg{
     z-index: 1;
@@ -712,3 +716,48 @@ header .right .icons span{
 }
 
 /* order food section end*/
+
+/* footer section start */
+.footer-section{
+    background: var(--secondary);
+    padding-top: 5rem;
+}
+.footer-section .logo{
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.footer-section .logo a{
+    color: var(--green);
+    font-size: 2.5rem;
+    font-family: 'Norican', cursive;
+    text-shadow: 1px 1px var(--green);
+}
+.footer-section h3{
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.footer-section p{
+    color: var(--text-white);
+    /* margin-bottom: 1rem; */
+    font-size: 1.5rem;
+}
+.footer-section h4{
+    color: var(--primary);
+}
+.footer-section .social-media i{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: var(--text-white);
+}
+.footer-bootom{
+    background: var(--bg-green);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+.footer-bootom span{
+    color: var(--primary);
+}
+/* footer section end */
+
