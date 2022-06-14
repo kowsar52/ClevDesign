@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        body{
+            background: rgb(227, 227, 227);
+            width: 100%;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 300px;   
+            margin: 0 auto;
+        }
+        .calculator{
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 1.5rem;
+            background: rgb(113, 113, 113);
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgb(196, 196, 196);
+            cursor: pointer;
+        }
+        #result{
+            width: 100%;
+            height: 50px;
+            background-color: wheat;
+            border-radius: 10px;
+        }
+        #oparators{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #oparators h1{
+            background-color: wheat;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: rgb(41, 41, 41);
+        }
+        #numbers{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+        
+        }
+        #numbers h2{
+            background-color: wheat;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            color: rgb(41, 41, 41);
+        }
+        .bottom{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+            justify-content: space-between;
+        }
+        .bottom #zero,
+        .bottom #equel{
+            background-color: wheat;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            color: rgb(41, 41, 41);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div id="result">
+jsjfa..
+            </div>
+            <div id="oparators">
+                <h1>+</h1>
+                <h1>-</h1>
+                <h1>*</h1>
+                <h1>/</h1>
+            </div>
+            <div id="numbers">
+                <h2 onclick="number1">1</h2>
+                <h2 onclick="number1">2</h2>
+                <h2>3</h2>
+                <h2>4</h2>
+                <h2>5</h2>
+                <h2>6</h2>
+                <h2>7</h2>
+                <h2>8</h2>
+                <h2>9</h2>
+            </div>
+            <div class="bottom">
+                <h1 id="zero">0</h2>
+                <h1 id="equel">=</h1>
+            </div>
+        </div>
+    </div>
+
+ 
+    <script>
+
+    //     const building = {
+    //         floor: 6,
+    //         name: "kalabagan-vobon",
+    //         car: 2,
+    //         cameras: 5,
+    //         open: function(){
+    //             console.log("sokal 8 tay")
+    //         },
+    //         close: function(){
+    //             console.log("raat 12 tay")
+    //         }
+    //     }
+    //    building.close();
+    //     console.log(typeof(building))
+
+
+        const calculator = {
+            number0: 0,
+            number1: 1,
+            number2: 2,
+            number3: 3,
+            number4: 4,
+            number5: 5,
+            number6: 6,
+            number7: 7,
+            number8: 8,
+            number9: 9,
+            oparetor: "+",
+            calculate: function(){
+                
+
+
+
+                // if(this.oparetor == "+"){
+                //     return this.number1+this.number2+this.number3+this.number4+this.number5+this.number6+this.number7+this.number8+this.number9
+                // }
+                // else if(this.oparetor == "-"){
+                //     return this.number1-this.number2-this.number3-this.number4-this.number5-this.number6-this.number7-this.number8-this.number9
+                // }
+                // else if(this.oparetor == "*"){
+                //     return this.number1*this.number2*this.number3*this.number4*this.number5*this.number6*this.number7*this.number8*this.number9
+                // }
+                // else if(this.oparetor == "/"){
+                //     return this.number1/this.number2/this.number3/this.number4/this.number5*this.number6/this.number7/this.number8/this.number9
+                // }
+            }
+        }
+        calculator.oparetor = "/"
+        console.log(calculator.calculate())
+        // function sum(a,b){
+        //     console.log(a/b)
+        // }
+        // function dec(a,b){
+        //     console.log(a-b)
+        // }
+        // function mul(a,b){
+        //     console.log(a*b)
+        // }
+        // function dev(a,b){
+        //     console.log(a/b)
+        // }
+        // function mod(a,b){
+        //     console.log(++a)
+        // }
+        // function min(a,b){
+        //     console.log(--a)
+        // }
+        
+        // var open = document.getElementById("click")
+        // var content = document.getElementById("show")
+
+        // var a = "100"
+        // var b = 30
+
+        // a = parseInt(100)
+
+        // console.log(a + b)
+
+        // function habib(){
+        //     console.log("hello "+ name +":)")
+        // }
+        // habib()
+
+
+        // var name = "Enter Your Name: "
+        // alert(name)
+        
+    </script>
+</body>
+</html>
