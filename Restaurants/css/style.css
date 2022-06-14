@@ -750,13 +750,13 @@ header .right .icons span{
     margin-left: 1rem;
     color: var(--text-white);
 }
-.footer-bootom{
+.footer-bottom{
     background: var(--bg-green);
     display: flex;
     justify-content: space-evenly;
     padding: 5rem 0;
 }
-.footer-bootom span{
+.footer-bottom span{
     color: var(--primary);
 }
 /* footer section end */

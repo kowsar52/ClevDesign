@@ -106,11 +106,16 @@
         padding: 1rem 3rem 1rem 1rem;
         padding-right: 8.5rem !important;
     }
-    .footer-section .input-wrapper .btn{
-        position: absolute;
-        right: 180px !important;
-        top: 5px;
-        padding: 0.5rem;
+    .footer-section .input-wrapper .input-btn {
+        position: absolute !important;
+        top: 0 !important;
+        right: 125px !important;
+        bottom: 0 !important;
+        border-radius: 0 5px 5px 0 !important;
+        padding: 1rem !important; 
+        background: var(--primary) !important;
+        font-size: 1.4rem !important;
+        font-weight: 600 !important;
     }
     .footer-bootom {
         background: var(--bg-green);
@@ -433,18 +438,24 @@
     }
     .footer-section .input-wrapper{
         position: relative;
-        width: 100%;
+
     }
-    .footer-section .input-wrapper input{
-        border-radius: .5rem;
-        padding: 1rem 3rem 1rem 1rem;
-        padding-right: 8.5rem !important;
+    .footer-section .input-wrapper input {
+    border-radius: 5px 0 0 5px !important;
+    padding: 1rem 3rem 1rem 1rem;
+    padding-right:0 !important;
+    width: 200px;
     }
-    .footer-section .input-wrapper .btn{
+    .footer-section .input-wrapper .input-btn {
         position: absolute;
-        right: 80px;
-        top: 5px;
-        padding: 0.5rem;
+        top: 0;
+        right: 30px;
+        bottom: 0;
+        border-radius: 0 5px 5px 0;
+        padding: 1rem; 
+        background: var(--primary);
+        font-size: 1.4rem;
+        font-weight: 600;
     }
     .footer-bootom img{
         width: 150px;
@@ -683,6 +694,27 @@
         bottom: -2%;
         right: 44%;
     }
+    .footer-section .input-wrapper{
+        position: relative;
+
+    }
+    .footer-section .input-wrapper input {
+    border-radius: 5px 0 0 5px !important;
+    padding: 1rem 3rem 1rem 1rem;
+    padding-right:0 !important;
+    width: 200px;
+    }
+    .footer-section .input-wrapper .input-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 1rem;
+        border-radius: 0 5px 5px 0;
+        background-color: var(--primary);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
     /* log-in box end  */
 
     .mobile-menu{
@@ -764,17 +796,6 @@
     .footer-section .input-wrapper{
         position: relative;
         width: 100%;
-    }
-    .footer-section .input-wrapper input{
-        border-radius: .5rem;
-        padding: 1rem 3rem 1rem 1rem;
-        padding-right: 8.5rem !important;
-    }
-    .footer-section .input-wrapper .btn{
-        position: absolute;
-        right: 15px;
-        top: 5px;
-        padding: 0.5rem;
     }
     /* for li active */
     li.active{
