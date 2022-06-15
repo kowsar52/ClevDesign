@@ -6,107 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 
-    <style>
-        body{
-            background: rgb(227, 227, 227);
-            width: 100%;
-            height: 100vh;
-            font-family: sans-serif;
-        }
-        .container{
-            width: 300px;   
-            margin: 0 auto;
-        }
-        .calculator{
-            width: 300px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1rem 1.5rem;
-            background: rgb(113, 113, 113);
-            border-radius: 10px;
-            box-shadow: 0 0 10px 0 rgb(196, 196, 196);
-            cursor: pointer;
-        }
-        #result{
-            width: 100%;
-            height: 50px;
-            background-color: wheat;
-            border-radius: 10px;
-        }
-        #oparators{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #oparators h1{
-            background-color: wheat;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: rgb(41, 41, 41);
-        }
-        #numbers{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            text-align: center;
-        
-        }
-        #numbers h2{
-            background-color: wheat;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 10px;
-            color: rgb(41, 41, 41);
-        }
-        .bottom{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            text-align: center;
-            justify-content: space-between;
-        }
-        .bottom #zero,
-        .bottom #equel{
-            background-color: wheat;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 10px;
-            color: rgb(41, 41, 41);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <div class="container">
-        <div class="calculator">
-            <div id="result">
-jsjfa..
-            </div>
-            <div id="oparators">
-                <h1>+</h1>
-                <h1>-</h1>
-                <h1>*</h1>
-                <h1>/</h1>
-            </div>
-            <div id="numbers">
-                <h2 onclick="number1">1</h2>
-                <h2 onclick="number1">2</h2>
-                <h2>3</h2>
-                <h2>4</h2>
-                <h2>5</h2>
-                <h2>6</h2>
-                <h2>7</h2>
-                <h2>8</h2>
-                <h2>9</h2>
-            </div>
-            <div class="bottom">
-                <h1 id="zero">0</h2>
-                <h1 id="equel">=</h1>
-            </div>
-        </div>
+    <div class="calculator-body">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="myResult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="deleteMe()"></td>
+                <td><input type="button" value="(" onclick="calculate('(')"></td>
+                <td><input type="button" value=")" onclick="calculate(')')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="calculate('7')"></td>
+                <td><input type="button" value="8" onclick="calculate('8')"></td>
+                <td><input type="button" value="9" onclick="calculate('9')"></td>
+                <td><input type="button" value="+" onclick="calculate('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="calculate('4')"></td>
+                <td><input type="button" value="5" onclick="calculate('5')"></td>
+                <td><input type="button" value="6" onclick="calculate('6')"></td>
+                <td><input type="button" value="-" onclick="calculate('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="calculate('1')"></td>
+                <td><input type="button" value="2" onclick="calculate('2')"></td>
+                <td><input type="button" value="3" onclick="calculate('3')"></td>
+                <td><input type="button" value="*" onclick="calculate('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="calculate('0')"></td>
+                <td><input type="button" value="." onclick="calculate('.')"></td>
+                <td><input type="button" value="/" onclick="calculate('/')"></td>
+                <td><input type="button" value="=" onclick="answer()"></td>
+            </tr>
+        </table>
     </div>
 
- 
     <script>
+
+
+        function deleteMe(){
+            document.getElementById('myResult').value = ""
+        }
+        function calculate(newValue){
+            document.getElementById("myResult").value += newValue
+        }
+        function answer() {
+        var a = document.getElementById("myResult").value ; 
+        var b = eval(a);
+        document.getElementById("myResult").value = b
+
+        }
 
     //     const building = {
     //         floor: 6,
@@ -124,19 +80,19 @@ jsjfa..
     //     console.log(typeof(building))
 
 
-        const calculator = {
-            number0: 0,
-            number1: 1,
-            number2: 2,
-            number3: 3,
-            number4: 4,
-            number5: 5,
-            number6: 6,
-            number7: 7,
-            number8: 8,
-            number9: 9,
-            oparetor: "+",
-            calculate: function(){
+        // const calculator = {
+        //     number0: 0,
+        //     number1: 1,
+        //     number2: 2,
+        //     number3: 3,
+        //     number4: 4,
+        //     number5: 5,
+        //     number6: 6,
+        //     number7: 7,
+        //     number8: 8,
+        //     number9: 9,
+        //     oparetor: "+",
+        //     calculate: function(){
                 
 
 
@@ -153,12 +109,13 @@ jsjfa..
                 // else if(this.oparetor == "/"){
                 //     return this.number1/this.number2/this.number3/this.number4/this.number5*this.number6/this.number7/this.number8/this.number9
                 // }
-            }
-        }
-        calculator.oparetor = "/"
-        console.log(calculator.calculate())
+        //     }
+        // }
+        // calculator.oparetor = "/"
+        // console.log(calculator.calculate())
+
         // function sum(a,b){
-        //     console.log(a/b)
+        //     console.log(a+b)
         // }
         // function dec(a,b){
         //     console.log(a-b)
@@ -176,6 +133,7 @@ jsjfa..
         //     console.log(--a)
         // }
         
+        // sum(10,5);
         // var open = document.getElementById("click")
         // var content = document.getElementById("show")
 
@@ -193,7 +151,7 @@ jsjfa..
 
 
         // var name = "Enter Your Name: "
-        // alert(name)
+        // prompt(name)
         
     </script>
 </body>
